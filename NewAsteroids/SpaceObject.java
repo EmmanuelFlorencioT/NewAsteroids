@@ -25,5 +25,12 @@ public abstract class SpaceObject extends Actor
         this.speed = 3;
     }
     
+    public int getSpeed(){
+        return this.speed;
+    }
+    public void setSpeed(int speed){
+        this.speed = speed;
+    }
+    
     public abstract void handleEdgeMovement();
 }
