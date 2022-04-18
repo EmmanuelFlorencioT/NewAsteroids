@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class AsteroidMed here.
+ * Write a description of class AsteroidSmall here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class AsteroidMed extends Asteroid
+public class AsteroidSmall extends Asteroid
 {
     /**
-     * Act - do whatever the AsteroidMed wants to do. This method is called whenever
+     * Act - do whatever the AsteroidSmall wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
@@ -23,10 +23,10 @@ public class AsteroidMed extends Asteroid
         }
     }
     
-    public AsteroidMed(){
+    public AsteroidSmall(){
         setRotation(0);
     }
-    public AsteroidMed(int rotation){
+    public AsteroidSmall(int rotation){
         setRotation(rotation);
     }
 }

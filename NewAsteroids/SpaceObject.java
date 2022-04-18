@@ -10,7 +10,6 @@ public abstract class SpaceObject extends Actor
 {
     private int life;
     private int speed;
-    private int direction;
     /**
      * Act - do whatever the SpaceObject wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -25,11 +24,17 @@ public abstract class SpaceObject extends Actor
         this.speed = 3;
     }
     
+    public abstract void earnLife();
+    public abstract void loseLife();
+    
     public void addLife(){
         life++;
     }
     public void subLife(){
         life--;
+    }
+    public int getLife(){
+        return this.life;
     }
     
     public int getSpeed(){

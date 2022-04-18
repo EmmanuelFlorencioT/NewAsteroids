@@ -15,8 +15,13 @@ public class Projectile extends SpaceObject
     public void act()
     {
         // Add your action code here.
-        move(super.getSpeed());
-        handleEdgeMovement();
+        if(getLife() > 0){
+            move(super.getSpeed());
+            checkCollision();
+            handleEdgeMovement();
+        } else {
+            getWorld().removeObject(this);
+        }
     }
     
     public Projectile(){
@@ -30,7 +35,33 @@ public class Projectile extends SpaceObject
     public void handleEdgeMovement(){
         /*Check for edge*/
         if(isAtEdge()){
-            getWorld().removeObject(this);
+            this.subLife();
+        }
+    }
+    
+    @Override
+    public void earnLife(){
+        super.addLife();
+    }
+    @Override
+    public void loseLife(){
+        super.subLife();
+    }
+    
+    public void checkCollision(){
+        Actor asteroid = getOneObjectAtOffset(0, 0, Asteroid.class);
+        
+        if(asteroid != null){
+            ((Asteroid)asteroid).subLife();
+            if(asteroid instanceof AsteroidMed){
+                AsteroidSmall ast1 = new AsteroidSmall(Greenfoot.getRandomNumber(360));
+                AsteroidSmall ast2 = new AsteroidSmall(Greenfoot.getRandomNumber(360));
+                getWorld().addObject(ast1, this.getX() + Greenfoot.getRandomNumber(5), 
+                                           this.getY() + Greenfoot.getRandomNumber(5));
+                getWorld().addObject(ast2, this.getX() + Greenfoot.getRandomNumber(5), 
+                                           this.getY() + Greenfoot.getRandomNumber(5));
+            }
+            this.subLife();
         }
     }
 }

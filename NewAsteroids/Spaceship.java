@@ -60,6 +60,15 @@ public class Spaceship extends SpaceObject
         }
     }
     
+    @Override
+    public void earnLife(){
+        super.addLife();
+    }
+    @Override
+    public void loseLife(){
+        super.subLife();
+    }
+    
     public void shoot(){
         if(Greenfoot.isKeyDown("space") && shotReady == true && shotCool.millisElapsed() > SHOT_INT){
             Projectile p = new Projectile(5, this.getRotation());
