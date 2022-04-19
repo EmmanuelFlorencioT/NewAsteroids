@@ -8,6 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class AsteroidSmall extends Asteroid
 {
+    /*The asteroid when created should not be a threat to the player*/
+    private SimpleTimer killCool = new SimpleTimer();
+    private boolean readyKill;
+    private int KILL_INT = 315;
+    /*-------------------------------------------------------------*/
     /**
      * Act - do whatever the AsteroidSmall wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,6 +23,7 @@ public class AsteroidSmall extends Asteroid
         if(getLife() > 0){
             move(getSpeed());
             handleEdgeMovement();
+            isReadyToKill();
         } else {
             getWorld().removeObject(this);
         }
@@ -26,7 +32,16 @@ public class AsteroidSmall extends Asteroid
     public AsteroidSmall(){
         setRotation(0);
     }
-    public AsteroidSmall(int rotation){
+    public AsteroidSmall(int speed, int rotation){
+        setSpeed(speed);
         setRotation(rotation);
+        readyKill = false;
+        killCool.mark();//Start the timer.
+    }
+    
+    public boolean isReadyToKill(){
+        if(killCool.millisElapsed() > KILL_INT)
+            readyKill = true;
+        return readyKill;
     }
 }

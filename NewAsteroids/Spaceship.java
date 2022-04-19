@@ -17,9 +17,15 @@ public class Spaceship extends SpaceObject
      */
     public void act()
     {
-        moveSpaceship();
-        handleEdgeMovement();
-        shoot();
+        if(getLife() > 0){
+            moveSpaceship();
+            handleEdgeMovement();
+            shoot();
+            checkForCollision();
+        } else {
+            getWorld().removeObject(this);
+            Greenfoot.stop(); /*We will stop the execution of the game (for now)*/
+        }
     }
     
     public Spaceship(){
@@ -60,15 +66,6 @@ public class Spaceship extends SpaceObject
         }
     }
     
-    @Override
-    public void earnLife(){
-        super.addLife();
-    }
-    @Override
-    public void loseLife(){
-        super.subLife();
-    }
-    
     public void shoot(){
         if(Greenfoot.isKeyDown("space") && shotReady == true && shotCool.millisElapsed() > SHOT_INT){
             Projectile p = new Projectile(5, this.getRotation());
@@ -80,5 +77,20 @@ public class Spaceship extends SpaceObject
         /*Check when the space key is depressed*/
         if(!Greenfoot.isKeyDown("space"))
             shotReady = true;
+    }
+    
+    public void checkForCollision(){
+        /*We are looking for an intersection with an asteroid killer(astKiller)*/
+        Actor astKiller = getOneObjectAtOffset(0, 0, Asteroid.class);
+        
+        if(astKiller != null){
+            /*We check if the AsteroidSmall is not ready to kill, then we return*/
+            if(astKiller instanceof AsteroidSmall && !((AsteroidSmall)astKiller).isReadyToKill()){
+                    return;
+            } else {
+                ((Asteroid)astKiller).subLife();
+                this.subLife();
+            }
+        }
     }
 }

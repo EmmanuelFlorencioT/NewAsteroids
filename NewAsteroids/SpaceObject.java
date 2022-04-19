@@ -24,9 +24,6 @@ public abstract class SpaceObject extends Actor
         this.speed = 3;
     }
     
-    public abstract void earnLife();
-    public abstract void loseLife();
-    
     public void addLife(){
         life++;
     }
