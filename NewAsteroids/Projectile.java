@@ -39,23 +39,15 @@ public class Projectile extends SpaceObject
         }
     }
     
-    @Override
-    public void earnLife(){
-        super.addLife();
-    }
-    @Override
-    public void loseLife(){
-        super.subLife();
-    }
-    
     public void checkCollision(){
         Actor asteroid = getOneObjectAtOffset(0, 0, Asteroid.class);
         
         if(asteroid != null){
             ((Asteroid)asteroid).subLife();
             if(asteroid instanceof AsteroidMed){
-                AsteroidSmall ast1 = new AsteroidSmall(Greenfoot.getRandomNumber(360));
-                AsteroidSmall ast2 = new AsteroidSmall(Greenfoot.getRandomNumber(360));
+                /*Two new asteroids are spawned with slightly less speed than the normal*/
+                AsteroidSmall ast1 = new AsteroidSmall(2, Greenfoot.getRandomNumber(360));
+                AsteroidSmall ast2 = new AsteroidSmall(2, Greenfoot.getRandomNumber(360));
                 getWorld().addObject(ast1, this.getX() + Greenfoot.getRandomNumber(5), 
                                            this.getY() + Greenfoot.getRandomNumber(5));
                 getWorld().addObject(ast2, this.getX() + Greenfoot.getRandomNumber(5), 

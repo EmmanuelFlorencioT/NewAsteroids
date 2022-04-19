@@ -40,13 +40,4 @@ public class Asteroid extends SpaceObject
             setLocation((w.getWidth() - 2), getY()); 
         }
     }
-    
-    @Override
-    public void earnLife(){
-        super.addLife();
-    }
-    @Override
-    public void loseLife(){
-        super.subLife();
-    }
 }
