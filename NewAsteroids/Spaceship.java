@@ -82,6 +82,8 @@ public class Spaceship extends SpaceObject
     public void checkForCollision(){
         /*We are looking for an intersection with an asteroid killer(astKiller)*/
         Actor astKiller = getOneObjectAtOffset(0, 0, Asteroid.class);
+        /*We are looking for a collision(intersection) with an asteroid invader*/
+        Actor invKiller = getOneObjectAtOffset(0, 0, Invader.class);
         
         if(astKiller != null){
             /*We check if the AsteroidSmall is not ready to kill, then we return*/
@@ -91,6 +93,10 @@ public class Spaceship extends SpaceObject
                 ((Asteroid)astKiller).subLife();
                 this.subLife();
             }
+        }
+        if(invKiller != null){
+            ((Invader)invKiller).subLife();
+            this.subLife();
         }
     }
 }
