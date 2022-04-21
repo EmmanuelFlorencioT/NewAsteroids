@@ -22,6 +22,7 @@ public class Invader extends SpaceObject
         if(getLife() > 0){
             moveInvader();
             handleEdgeMovement();
+            shoot();
         } else {
             getWorld().removeObject(this);
         }
@@ -55,6 +56,23 @@ public class Invader extends SpaceObject
         /*Chech for the left edge*/
         if( getX() < 0 + 1){
             setLocation((w.getWidth() - 2), getY()); 
+        }
+    }
+    
+    public void shoot(){
+        if(shotTimer.millisElapsed() > SHOT_INT){
+            if(getWorld().getObjects(Spaceship.class).isEmpty()){
+                shotTimer.mark();
+                return; /*If the list of objects is empty*/
+            }
+
+        
+            /*Get the 1st and only item in the list*/
+            Actor player = getWorld().getObjects(Spaceship.class).get(0);
+            HostileProjectile h = new HostileProjectile(5); /*The speed of the projectile*/
+            getWorld().addObject(h, this.getX(), this.getY());
+            h.turnTowards(player.getX(), player.getY());
+            shotTimer.mark();
         }
     }
 }

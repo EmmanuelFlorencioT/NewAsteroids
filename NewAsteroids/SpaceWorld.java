@@ -23,9 +23,9 @@ public class SpaceWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         numOfAsteroids = 0;
-        maxNumOfAsteroids = 1;
+        maxNumOfAsteroids = 5;
         numOfInvaders = 0;
-        maxNumOfInvaders = 3;
+        maxNumOfInvaders = 2;
         astCall.mark(); //Start the timer
         invCall.mark();
         prepare();
