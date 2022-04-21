@@ -16,7 +16,7 @@ public class Projectile extends SpaceObject
     {
         // Add your action code here.
         if(getLife() > 0){
-            move(super.getSpeed());
+            move(getSpeed());
             checkCollision();
             handleEdgeMovement();
         } else {
@@ -41,6 +41,7 @@ public class Projectile extends SpaceObject
     
     public void checkCollision(){
         Actor asteroid = getOneObjectAtOffset(0, 0, Asteroid.class);
+        Actor invader = getOneObjectAtOffset(0, 0, Invader.class);
         
         if(asteroid != null){
             ((Asteroid)asteroid).subLife();
@@ -53,6 +54,11 @@ public class Projectile extends SpaceObject
                 getWorld().addObject(ast2, this.getX() + Greenfoot.getRandomNumber(5), 
                                            this.getY() + Greenfoot.getRandomNumber(5));
             }
+            this.subLife();
+        }
+        
+        if(invader != null){
+            ((Invader)invader).subLife();
             this.subLife();
         }
     }
