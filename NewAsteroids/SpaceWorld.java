@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class SpaceWorld extends World
-{
+{   
     private SimpleTimer astCall = new SimpleTimer();
     private SimpleTimer invCall = new SimpleTimer();
     private int numOfAsteroids, maxNumOfAsteroids;
@@ -21,7 +21,7 @@ public class SpaceWorld extends World
     public SpaceWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
         numOfAsteroids = 0;
         maxNumOfAsteroids = 5;
         numOfInvaders = 0;
