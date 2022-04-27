@@ -69,7 +69,7 @@ public class Invader extends SpaceObject
         
             /*Get the 1st and only item in the list*/
             Actor player = getWorld().getObjects(Spaceship.class).get(0);
-            HostileProjectile h = new HostileProjectile(getSpeed()+2); /*The speed of the projectile*/
+            HostileProjectile h = new HostileProjectile(5); /*The speed of the projectile*/
             getWorld().addObject(h, this.getX(), this.getY());
             h.turnTowards(player.getX(), player.getY());
             shotTimer.mark();
