@@ -16,7 +16,7 @@ public class Projectile extends SpaceObject
     {
         // Add your action code here.
         if(getLife() > 0){
-            move(getSpeed());
+            move(getSpeed()+2);
             checkCollision();
             handleEdgeMovement();
         } else {
