@@ -35,7 +35,7 @@ public class Spaceship extends SpaceObject
     
     public void moveSpaceship(){
         if(Greenfoot.isKeyDown("up")){
-            move(super.getSpeed());
+            move(getSpeed());
         }
         if(Greenfoot.isKeyDown("right")){
             turn(5);

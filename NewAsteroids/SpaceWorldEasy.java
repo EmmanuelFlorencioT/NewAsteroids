@@ -1,22 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class SpaceWorld here.
+ * Write a description of class SpaceWorldEasy here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class SpaceWorld extends Level
-{   
+public class SpaceWorldEasy extends Level
+{
+
     /**
      * Constructor for objects of class SpaceWorld.
      * 
      */
-    public SpaceWorld()
+    public SpaceWorldEasy()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        setMaxNumOfAsteroids(5);
-        setMaxNumOfInvaders(2);
+        setMaxNumOfAsteroids(3);
+        setMaxNumOfInvaders(1);
         setAsteroidInterval(20);
         setInvaderInterval(500);
         astCall.mark(); //Start the timer
