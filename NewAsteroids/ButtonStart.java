@@ -22,8 +22,9 @@ public class ButtonStart extends Button
     @Override
     public void getPressButton(){
         if(Greenfoot.mousePressed(this) == true){
-            SpaceWorld level1 = new SpaceWorld();
+            SpaceWorldEasy level1 = new SpaceWorldEasy();
             Greenfoot.setWorld(level1);
+            
         }
     }
 }
