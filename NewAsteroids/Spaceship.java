@@ -69,6 +69,8 @@ public class Spaceship extends SpaceObject
     public void shoot(){
         if(Greenfoot.isKeyDown("space") && shotReady == true && shotCool.millisElapsed() > SHOT_INT){
             Projectile p = new Projectile(5, this.getRotation());
+            GreenfootSound shootSound = new GreenfootSound("shootSpaceShip.mp3");
+            shootSound.play();
             getWorld().addObject(p, getX(), getY());
             shotReady = false;
             //Reset the timer

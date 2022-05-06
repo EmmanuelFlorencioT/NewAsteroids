@@ -8,9 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Menu extends World
 {
-    MouseInfo mouse = Greenfoot.getMouseInfo();
     private GifImage background = new GifImage("backgroundMenu.gif");
     private Button start = new ButtonStart();
+    private GreenfootSound backgroundMusic = new GreenfootSound("MenuAudio.mp3");
     /**
      * Constructor for objects of class Menu.
      * 
@@ -20,7 +20,6 @@ public class Menu extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600,400,1);
         Addoptions();
-        
     }
     public void Addoptions(){
         addObject(start,300,150);
@@ -28,6 +27,13 @@ public class Menu extends World
     
     public void act(){
         setBackground(background.getCurrentImage());
+        backgroundMusic.playLoop();
         start.getPressButton();
+        stop();
+    }
+    public void stop(){
+        if(Greenfoot.mousePressed(start) == true){
+            backgroundMusic.stop();
+        }
     }
 }
