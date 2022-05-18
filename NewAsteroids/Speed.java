@@ -31,10 +31,11 @@ public class Speed extends PowerUp
     @Override
     public void checkForCollision(){
         Actor player = getOneObjectAtOffset(0, 0, Spaceship.class);
+        PowerUpTimer pwrTimer = null;
         
         if(player != null){
             //((Spaceship)player).Method();  Do something with player
-            
+            //pwrTimer = new PowerUpTimer(player, speedFlag); It doesn't work
             this.subLife();
         }
     }

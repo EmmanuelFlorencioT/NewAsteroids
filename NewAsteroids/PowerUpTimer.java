@@ -38,7 +38,7 @@ public class PowerUpTimer extends Actor
     
     public void SpeedTimer(){
         powerUpActive.mark(); //Set the timer to 0
-        player.setSpeed(10); //Increase the speed of the player
+        ((Spaceship)player).setSpeed(10); //Increase the speed of the player
         if(powerUpActive.millisElapsed() > DURATION)
             player.setSpeed(3); //Decrease the speed of the player
     }
