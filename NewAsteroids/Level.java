@@ -10,10 +10,13 @@ public abstract class Level extends World
 {
     protected SimpleTimer astCall = new SimpleTimer();
     protected SimpleTimer invCall = new SimpleTimer();
+    protected SimpleTimer powCall = new SimpleTimer();
     private int numOfAsteroids, maxNumOfAsteroids;
     private int numOfInvaders, maxNumOfInvaders;
+    private int numOfPowerUp, maxNumOfPowerUp;
     private int ASTEROID_INT; /*Interval for possible spawn of Asteroids*/
     private int INVADER_INT; /*Interval for possible spawn of Invader*/
+    private int POWERUP_INT; /*Interval for possible spawn of PowerUp*/
     
     /**
      * Constructor for objects of class Level.
@@ -23,7 +26,7 @@ public abstract class Level extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-        numOfAsteroids = numOfInvaders = 0;
+        numOfAsteroids = numOfInvaders = numOfPowerUp = 0;
     }
     
     /*Asteroid Handling*/
@@ -64,5 +67,28 @@ public abstract class Level extends World
     }
     public int getInvaderInterval(){
         return this.INVADER_INT;
+    }
+    
+    /*PowerUp Handling*/
+    public void setMaxNumOfPowerUp(int maxPow){
+        this.maxNumOfPowerUp = maxPow;
+    }
+    public int getMaxNumOfPowerUp(){
+        return this.maxNumOfPowerUp;
+    }
+    public void addPowerUp(){
+        this.numOfPowerUp++;
+    }
+    public void subPowerUp(){
+        this.numOfPowerUp--;
+    }
+    public int getNumOfPowerUp(){
+        return this.numOfPowerUp;
+    }
+    public void setPowerUpInterval(int interval){
+        this.POWERUP_INT = interval;
+    }
+    public int getPowerUpInterval(){
+        return this.POWERUP_INT;
     }
 }
