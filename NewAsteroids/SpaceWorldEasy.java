@@ -21,7 +21,7 @@ public class SpaceWorldEasy extends Level
         setMaxNumOfPowerUp(1);
         setAsteroidInterval(20);
         setInvaderInterval(500);
-        setPowerUpInterval(75);
+        setPowerUpInterval(750);
         astCall.mark(); //Start the timer
         invCall.mark();
         powCall.mark();
@@ -70,16 +70,16 @@ public class SpaceWorldEasy extends Level
             if(getNumOfPowerUp() < getMaxNumOfPowerUp() && Greenfoot.getRandomNumber(1000) < 500){
                 addPowerUp();
                 int typeOfPowerUp = Greenfoot.getRandomNumber(2);
-                PowerUp p = null;
+                PowerUp pUp = null;
                 switch(typeOfPowerUp){
                     case 0: //ExtraLife
-                        p = new ExtraLife();
+                        pUp = new ExtraLife();
                         break;
                     case 1: //Speed
-                        p = new Speed();
+                        pUp = new Speed();
                         break;
                 }
-                spawnInLocation(p);
+                spawnInLocation(pUp);
             }
             powCall.mark();
         }
