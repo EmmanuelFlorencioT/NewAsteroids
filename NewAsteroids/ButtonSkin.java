@@ -1,29 +1,28 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ButtonStart here.
+ * Write a description of class ButtonSkin here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ButtonStart extends Button
+public class ButtonSkin extends Button
 {
-    private GifImage buttonStart = new GifImage("StartButton.gif");
     /**
-     * Act - do whatever the ButtonStart wants to do. This method is called whenever
+     * Act - do whatever the ButtonSkin wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
+    private GifImage buttonSkin = new GifImage("SkinButton.gif");
     public void act()
     {
         // Add your action code here.
-        setImage(buttonStart.getCurrentImage());
+        setImage(buttonSkin.getCurrentImage());
     }
     @Override
     public void getPressButton(){
         if(Greenfoot.mousePressed(this) == true){
-            SpaceWorldEasy level1 = new SpaceWorldEasy();
-            Greenfoot.setWorld(level1);
+            //SpaceWorldEasy level1 = new SpaceWorldEasy();
+           // Greenfoot.setWorld(level1);
             
         }
     }

@@ -44,4 +44,14 @@ public class AsteroidSmall extends Asteroid
             readyKill = true;
         return readyKill;
     }
+    
+    public void asteroidsSpriteSmall(int band){
+        if(band == 1){
+            setImage("SmallAsteroid_Model1.png");
+        }else if(band == 2){
+            setImage("SmallAsteroid_Model2.png");
+        }else if(band == 3){
+            setImage("SmallAsteroid_Model3.png");
+        }
+    }
 }

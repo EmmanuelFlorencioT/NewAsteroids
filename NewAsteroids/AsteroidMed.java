@@ -29,4 +29,13 @@ public class AsteroidMed extends Asteroid
     public AsteroidMed(int rotation){
         setRotation(rotation);
     }
+    public void asteroidsSpritesMed(int band){
+        if(band == 1){
+            setImage("BigAsteroid_Model1.png");
+        }else if(band == 2){
+            setImage("BigAsteroid_Model2.png");
+        }else if(band == 3){
+            setImage("BigAsteroid_Model3.png");
+        }
+    }
 }

@@ -43,11 +43,13 @@ public class SpaceWorldEasy extends Level
         if(astCall.millisElapsed() > getAsteroidInterval()){
             if(getNumOfAsteroids() < getMaxNumOfAsteroids() && Greenfoot.getRandomNumber(1000) < 20){
                 addAsteroid();
+                int bandSprite = Greenfoot.getRandomNumber(3) + 1;
                 int location = Greenfoot.getRandomNumber(4);
                 int direction = Greenfoot.getRandomNumber(178);
                 int offsetX = Greenfoot.getRandomNumber(getWidth()-20) + 10;
                 int offsetY = Greenfoot.getRandomNumber(getHeight() - 20) + 10;
                 AsteroidMed a = new AsteroidMed();
+                a.asteroidsSpritesMed(bandSprite);
                 switch(location){
                     case 0: //Superior edge
                         a.setRotation(direction + 1);
