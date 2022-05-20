@@ -56,9 +56,7 @@ public class Menu extends World
     }
     
     public void Addcharacters(){
-        
         addObject(return_menu,500,300);
-        //addObject(getSkins(0),250, 300);
         AddOptionsSkin();
     }
     
@@ -83,11 +81,12 @@ public class Menu extends World
     public void StartGame(){
         for(Aspect skin : skins){
             skin.Init_Game();
+            stop(skin);
         }
     }
-    /*public void stop(){
-        if(Greenfoot.mousePressed(start) == true){
+    public void stop(Aspect skin){
+        if(Greenfoot.mousePressed(skin) == true){
             backgroundMusic.stop();
         }
-    }*/
+    }
 }

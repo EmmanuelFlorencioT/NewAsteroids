@@ -9,8 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Spaceship extends SpaceObject
 {
     private SimpleTimer shotCool = new SimpleTimer();
-    private int SHOT_INT = 300; //Shot interval
-    private boolean shotReady;
+    private final int SHOT_INT = 300; //Shot interval
+    private final int ACTIVE_PWRUP = 200; //Number of cycles power up will be active
+    private int powerupTimeLeft = ACTIVE_PWRUP;
+    private boolean shotReady, powerActive = false;
     /**
      * Act - do whatever the Spaceship wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -22,6 +24,9 @@ public class Spaceship extends SpaceObject
             handleEdgeMovement();
             shoot();
             checkForCollision();
+            if(powerActive){
+                speedBoostTimer();
+            }
         } else {
             getWorld().removeObject(this);
             Greenfoot.stop(); /*We will stop the execution of the game (for now)*/
@@ -78,6 +83,7 @@ public class Spaceship extends SpaceObject
             GreenfootSound shootSound = new GreenfootSound("shootSpaceShip.mp3");
             shootSound.play();
             getWorld().addObject(p, getX(), getY());
+            getWorld().addObject(p, getX(), getY());
             shotReady = false;
             //Reset the timer
             shotCool.mark();
@@ -105,6 +111,20 @@ public class Spaceship extends SpaceObject
         if(invKiller != null){
             ((Invader)invKiller).subLife();
             this.subLife();
+        }
+    }
+    
+    /*Speed Power Up*/
+    public void increaseSpeed(){
+        this.powerActive = true;
+        setSpeed(6);
+    }
+    public void speedBoostTimer(){
+        powerupTimeLeft--;
+        if(powerupTimeLeft <= 0){
+            this.powerActive = false;
+            setSpeed(3);
+            powerupTimeLeft = ACTIVE_PWRUP; //Reset timer
         }
     }
 }
