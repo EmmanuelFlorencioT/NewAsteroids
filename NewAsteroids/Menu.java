@@ -8,10 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Menu extends World
 {
-    private GifImage background = new GifImage("ASTEROIDS_Version2.png");
+    private GifImage background = new GifImage("backgroundMenu.gif");
     private Button start = new ButtonStart();
     private Button skin = new ButtonSkin();
     private GreenfootSound backgroundMusic = new GreenfootSound("MenuAudio.mp3");
+    private Logo logo = new Logo();
     /**
      * Constructor for objects of class Menu.
      * 
@@ -25,6 +26,7 @@ public class Menu extends World
     public void Addoptions(){
         addObject(start,300,200);
         addObject(skin,300,270);
+        addObject(logo,300,100);
     }
     
     public void act(){
