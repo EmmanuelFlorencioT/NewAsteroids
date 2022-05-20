@@ -33,6 +33,12 @@ public class Spaceship extends SpaceObject
         shotReady = true;
     }
     
+    public Spaceship(String skin){
+        this.setRotation(-90);
+        shotReady = true;
+        setImage(skin);
+    }
+    
     public void moveSpaceship(){
         if(Greenfoot.isKeyDown("up")){
             move(getSpeed());
