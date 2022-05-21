@@ -27,6 +27,18 @@ public class SpaceWorldEasy extends Level
         powCall.mark();
         prepare();
     }
+    
+    public SpaceWorldEasy(String skin)
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        setMaxNumOfAsteroids(3);
+        setMaxNumOfInvaders(1);
+        setAsteroidInterval(20);
+        setInvaderInterval(500);
+        astCall.mark(); //Start the timer
+        invCall.mark();
+        prepare(skin);
+    }
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -34,6 +46,12 @@ public class SpaceWorldEasy extends Level
     private void prepare()
     {
         Spaceship player = new Spaceship();
+        addObject(player, 300, 300);
+    }
+    
+    private void prepare(String skin)
+    {
+        Spaceship player = new Spaceship(skin);
         addObject(player, 300, 300);
     }
     

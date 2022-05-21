@@ -20,11 +20,7 @@ public class ButtonStart extends Button
         setImage(buttonStart.getCurrentImage());
     }
     @Override
-    public void getPressButton(){
-        if(Greenfoot.mousePressed(this) == true){
-            SpaceWorldEasy level1 = new SpaceWorldEasy();
-            Greenfoot.setWorld(level1);
-            
-        }
+    public boolean getPressButton(){
+        return Greenfoot.mousePressed(this);
     }
 }
