@@ -19,11 +19,12 @@ public class ButtonSkin extends Button
         setImage(buttonSkin.getCurrentImage());
     }
     @Override
-    public void getPressButton(){
+    public boolean getPressButton(){
         if(Greenfoot.mousePressed(this) == true){
             //SpaceWorldEasy level1 = new SpaceWorldEasy();
            // Greenfoot.setWorld(level1);
             
         }
+        return true;
     }
 }
