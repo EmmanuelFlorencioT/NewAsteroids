@@ -10,15 +10,15 @@ public class Menu extends World
 {
     private GifImage background = new GifImage("backgroundMenu.gif");
     private Button start = new ButtonStart();
+    private Button buttonSkin = new ButtonSkin();
 //<<<<<<< HEAD
-    private Button skin = new ButtonSkin();
+    
     private GreenfootSound backgroundMusic = new GreenfootSound("MenuAudio.mp3");
     private Logo logo = new Logo();
 ////=======
     private Button return_menu = new ButtonReturn();
     //add the skin from spaceship
     private ArrayList <Aspect> skins = new ArrayList<Aspect>();
-    private GreenfootSound backgroundMusic = new GreenfootSound("MenuAudio.mp3");
     private boolean check_init_game = false;
     private Character skin;
 //>>>>>>> main
@@ -59,7 +59,7 @@ public class Menu extends World
     
     public void Addoptions(){
         addObject(start,300,200);
-        addObject(skin,300,270);
+        addObject(buttonSkin,300,270);
         addObject(logo,300,100);
     }
     
