@@ -1,12 +1,121 @@
 #Greenfoot project file
+<<<<<<< HEAD
+class.AsteroidMed.image=BigAsteroid_Model3.png
+class.AsteroidSmall.image=SmallAsteroid_Model1.png
+class.ButtonSkin.image=SkinButton.gif
+class.ButtonStart.image=StartButton.gif
+class.HostileProjectile.image=EnemyProjectile_Version2.png
+=======
 class.AsteroidMed.image=AsteroidMed.png
 class.AsteroidSmall.image=AsteroidSmall.png
 class.ButtonReturn.image=ButtonStart.gif
 class.ButtonStart.image=ButtonStart.gif
 class.ExtraLife.image=button-yellow.png
 class.HostileProjectile.image=HostileProjectile.png
+>>>>>>> main
 class.Invader.image=8bit-Invader.png
+class.Logo.image=Logo_version1.png
 class.Menu.image=backgroundMenu.gif
+<<<<<<< HEAD
+class.Projectile.image=Projectile_Version2.png
+class.SpaceWorld.image=Background_Level1.png
+class.SpaceWorldEasy.image=Background_Level1.png
+class.Spaceship.image=SpaceShip_Model7_Static.png
+dependency1.from=Level
+dependency1.to=SimpleTimer
+dependency1.type=UsesDependency
+dependency10.from=Menu
+dependency10.to=ButtonStart
+dependency10.type=UsesDependency
+dependency11.from=Menu
+dependency11.to=ButtonSkin
+dependency11.type=UsesDependency
+dependency12.from=Menu
+dependency12.to=Logo
+dependency12.type=UsesDependency
+dependency13.from=HostileProjectile
+dependency13.to=Spaceship
+dependency13.type=UsesDependency
+dependency14.from=Spaceship
+dependency14.to=SimpleTimer
+dependency14.type=UsesDependency
+dependency15.from=Spaceship
+dependency15.to=Projectile
+dependency15.type=UsesDependency
+dependency16.from=Spaceship
+dependency16.to=AsteroidSmall
+dependency16.type=UsesDependency
+dependency17.from=Spaceship
+dependency17.to=Asteroid
+dependency17.type=UsesDependency
+dependency18.from=Spaceship
+dependency18.to=Invader
+dependency18.type=UsesDependency
+dependency19.from=Invader
+dependency19.to=SimpleTimer
+dependency19.type=UsesDependency
+dependency2.from=SpaceWorldEasy
+dependency2.to=Spaceship
+dependency2.type=UsesDependency
+dependency20.from=Invader
+dependency20.to=HostileProjectile
+dependency20.type=UsesDependency
+dependency21.from=Invader
+dependency21.to=Spaceship
+dependency21.type=UsesDependency
+dependency22.from=Projectile
+dependency22.to=Asteroid
+dependency22.type=UsesDependency
+dependency23.from=Projectile
+dependency23.to=AsteroidMed
+dependency23.type=UsesDependency
+dependency24.from=Projectile
+dependency24.to=AsteroidSmall
+dependency24.type=UsesDependency
+dependency25.from=Projectile
+dependency25.to=Invader
+dependency25.type=UsesDependency
+dependency26.from=AsteroidSmall
+dependency26.to=SimpleTimer
+dependency26.type=UsesDependency
+dependency27.from=ButtonStart
+dependency27.to=GifImage
+dependency27.type=UsesDependency
+dependency28.from=ButtonStart
+dependency28.to=SpaceWorldEasy
+dependency28.type=UsesDependency
+dependency29.from=ButtonSkin
+dependency29.to=GifImage
+dependency29.type=UsesDependency
+dependency3.from=SpaceWorldEasy
+dependency3.to=AsteroidMed
+dependency3.type=UsesDependency
+dependency4.from=SpaceWorldEasy
+dependency4.to=Invader
+dependency4.type=UsesDependency
+dependency5.from=SpaceWorld
+dependency5.to=Spaceship
+dependency5.type=UsesDependency
+dependency6.from=SpaceWorld
+dependency6.to=AsteroidMed
+dependency6.type=UsesDependency
+dependency7.from=SpaceWorld
+dependency7.to=Invader
+dependency7.type=UsesDependency
+dependency8.from=Menu
+dependency8.to=GifImage
+dependency8.type=UsesDependency
+dependency9.from=Menu
+dependency9.to=Button
+dependency9.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=686
+package.numDependencies=29
+package.numTargets=19
+=======
 class.Projectile.image=Projectile.png
 class.Skin1.image=SpaceShip_Model1_Static.png
 class.Skin2.image=SpaceShip_Model2_Static.png
@@ -170,6 +279,7 @@ editor.fx.0.y=92
 height=742
 package.numDependencies=48
 package.numTargets=29
+>>>>>>> main
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -180,7 +290,7 @@ publish.title=
 publish.url=
 readme.height=60
 readme.name=@README
-readme.width=49
+readme.width=48
 readme.x=10
 readme.y=10
 simulation.speed=50
@@ -192,70 +302,110 @@ target1.width=120
 target1.x=0
 target1.y=0
 target10.height=70
+<<<<<<< HEAD
+target10.name=GifImage
+=======
 target10.name=Menu
+>>>>>>> main
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
+<<<<<<< HEAD
+target11.name=ButtonStart
+=======
 target11.name=MyWorld
+>>>>>>> main
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
 target11.x=0
 target11.y=0
 target12.height=70
+<<<<<<< HEAD
+target12.name=Asteroid
+=======
 target12.name=Speed
+>>>>>>> main
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
+<<<<<<< HEAD
+target13.name=Button
+=======
 target13.name=SpaceWorldEasy
+>>>>>>> main
 target13.showInterface=false
-target13.type=ClassTarget
+target13.type=AbstractTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
+<<<<<<< HEAD
+target14.name=Level
+=======
 target14.name=SimpleTimer
+>>>>>>> main
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< HEAD
+target15.name=Menu
+=======
 target15.name=Invader
+>>>>>>> main
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
 target16.height=70
+<<<<<<< HEAD
+target16.name=MyWorld
+=======
 target16.name=Projectile
+>>>>>>> main
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=120
 target16.x=0
 target16.y=0
 target17.height=70
+<<<<<<< HEAD
+target17.name=SpaceWorld
+=======
 target17.name=GifImage
+>>>>>>> main
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=120
 target17.x=0
 target17.y=0
 target18.height=70
+<<<<<<< HEAD
+target18.name=AsteroidMed
+=======
 target18.name=Skin4
+>>>>>>> main
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=120
 target18.x=0
 target18.y=0
 target19.height=70
+<<<<<<< HEAD
+target19.name=ButtonSkin
+=======
 target19.name=Skin3
+>>>>>>> main
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=120
@@ -339,56 +489,91 @@ target29.width=120
 target29.x=0
 target29.y=0
 target3.height=70
+<<<<<<< HEAD
+target3.name=SimpleTimer
+=======
 target3.name=Spaceship
+>>>>>>> main
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
 target4.height=70
+<<<<<<< HEAD
+target4.name=HostileProjectile
+=======
 target4.name=Aspect
+>>>>>>> main
 target4.showInterface=false
 target4.type=AbstractTarget
 target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
+<<<<<<< HEAD
+target5.name=Spaceship
+=======
 target5.name=AsteroidSmall
+>>>>>>> main
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=120
 target5.x=0
 target5.y=0
 target6.height=70
+<<<<<<< HEAD
+target6.name=Invader
+=======
 target6.name=ButtonStart
+>>>>>>> main
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
+<<<<<<< HEAD
+target7.name=AsteroidSmall
+=======
 target7.name=Asteroid
+>>>>>>> main
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
 target7.x=0
 target7.y=0
 target8.height=70
+<<<<<<< HEAD
+target8.name=Logo
+=======
 target8.name=Button
+>>>>>>> main
 target8.showInterface=false
 target8.type=AbstractTarget
 target8.width=120
 target8.x=0
 target8.y=0
 target9.height=70
+<<<<<<< HEAD
+target9.name=Projectile
+=======
 target9.name=ExtraLife
+>>>>>>> main
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
+width=1294
+world.lastInstantiated=Menu
+xPosition=0
+yPosition=0
+=======
 width=1219
 world.lastInstantiated=Menu
 xPosition=241
 yPosition=50
+>>>>>>> main

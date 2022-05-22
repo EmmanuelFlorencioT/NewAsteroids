@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ButtonStart extends Button
 {
-    private GifImage buttonStart = new GifImage("ButtonStart.gif");
+    private GifImage buttonStart = new GifImage("StartButton.gif");
     /**
      * Act - do whatever the ButtonStart wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
