@@ -78,6 +78,7 @@ public class Menu extends World
     public void SelectOptionsMenu(){
         if(start.getPressButton() == true){
             removeObjects(getObjects(Button.class));
+            removeObjects(getObjects(Logo.class));
             Addcharacters();
         }
         if(return_menu.getPressButton() == true){
