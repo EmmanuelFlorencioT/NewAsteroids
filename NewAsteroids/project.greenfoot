@@ -1,277 +1,18 @@
 #Greenfoot project file
 class.AsteroidMed.image=AsteroidMed.png
 class.AsteroidSmall.image=AsteroidSmall.png
-<<<<<<< HEAD
 class.Burst.image=button-blue.png
-=======
 class.ButtonReturn.image=ButtonStart.gif
-<<<<<<< HEAD
->>>>>>> main
-=======
 class.ButtonSkin.image=SkinButton.gif
->>>>>>> main
 class.ButtonStart.image=ButtonStart.gif
 class.ExtraLife.image=button-yellow.png
 class.HostileProjectile.image=HostileProjectile.png
 class.Invader.image=8bit-Invader.png
 class.Logo.image=Logo_version1.png
 class.Menu.image=backgroundMenu.gif
-<<<<<<< HEAD
-<<<<<<< HEAD
 class.PowerUp.image=a.png
 class.Projectile.image=Projectile.png
 class.Shield.image=button-red.png
-class.SpaceWorld.image=space1.jpg
-class.SpaceWorldEasy.image=space.jpg
-class.Spaceship.image=8Bit-X-Wing.png
-class.Speed.image=button-green.png
-class.Weapon.image=button-red\ (1).png
-dependency1.from=Level
-dependency1.to=SimpleTimer
-dependency1.type=UsesDependency
-dependency10.from=SpaceWorld
-dependency10.to=Spaceship
-dependency10.type=UsesDependency
-dependency11.from=SpaceWorld
-dependency11.to=AsteroidMed
-dependency11.type=UsesDependency
-dependency12.from=SpaceWorld
-dependency12.to=Invader
-dependency12.type=UsesDependency
-dependency13.from=Menu
-dependency13.to=GifImage
-dependency13.type=UsesDependency
-dependency14.from=Menu
-dependency14.to=Button
-dependency14.type=UsesDependency
-dependency15.from=Menu
-dependency15.to=ButtonStart
-dependency15.type=UsesDependency
-dependency16.from=Shield
-dependency16.to=Spaceship
-dependency16.type=UsesDependency
-dependency17.from=Shield
-dependency17.to=Level
-dependency17.type=UsesDependency
-dependency18.from=Shield
-dependency18.to=Asteroid
-dependency18.type=UsesDependency
-dependency19.from=Shield
-dependency19.to=Invader
-=======
-<<<<<<< HEAD
-class.Projectile.image=Projectile_Version2.png
-class.SpaceWorld.image=Background_Level1.png
-class.SpaceWorldEasy.image=Background_Level1.png
-class.Spaceship.image=SpaceShip_Model7_Static.png
-dependency1.from=Level
-dependency1.to=SimpleTimer
-dependency1.type=UsesDependency
-dependency10.from=Menu
-dependency10.to=ButtonStart
-dependency10.type=UsesDependency
-dependency11.from=Menu
-dependency11.to=ButtonSkin
-dependency11.type=UsesDependency
-dependency12.from=Menu
-dependency12.to=Logo
-dependency12.type=UsesDependency
-dependency13.from=HostileProjectile
-dependency13.to=Spaceship
-dependency13.type=UsesDependency
-dependency14.from=Spaceship
-dependency14.to=SimpleTimer
-dependency14.type=UsesDependency
-dependency15.from=Spaceship
-dependency15.to=Projectile
-dependency15.type=UsesDependency
-dependency16.from=Spaceship
-dependency16.to=AsteroidSmall
-dependency16.type=UsesDependency
-dependency17.from=Spaceship
-dependency17.to=Asteroid
-dependency17.type=UsesDependency
-dependency18.from=Spaceship
-dependency18.to=Invader
-dependency18.type=UsesDependency
-dependency19.from=Invader
-dependency19.to=SimpleTimer
->>>>>>> main
-dependency19.type=UsesDependency
-dependency2.from=SpaceWorldEasy
-dependency2.to=Spaceship
-dependency2.type=UsesDependency
-<<<<<<< HEAD
-dependency20.from=Shield
-dependency20.to=HostileProjectile
-dependency20.type=UsesDependency
-dependency21.from=HostileProjectile
-dependency21.to=Spaceship
-dependency21.type=UsesDependency
-dependency22.from=Spaceship
-dependency22.to=SimpleTimer
-dependency22.type=UsesDependency
-dependency23.from=Spaceship
-dependency23.to=Projectile
-dependency23.type=UsesDependency
-dependency24.from=Spaceship
-dependency24.to=AsteroidSmall
-dependency24.type=UsesDependency
-dependency25.from=Spaceship
-dependency25.to=Asteroid
-dependency25.type=UsesDependency
-dependency26.from=Spaceship
-dependency26.to=Invader
-dependency26.type=UsesDependency
-dependency27.from=Invader
-dependency27.to=SimpleTimer
-dependency27.type=UsesDependency
-dependency28.from=Invader
-dependency28.to=HostileProjectile
-dependency28.type=UsesDependency
-dependency29.from=Invader
-dependency29.to=Spaceship
-=======
-dependency20.from=Invader
-dependency20.to=HostileProjectile
-dependency20.type=UsesDependency
-dependency21.from=Invader
-dependency21.to=Spaceship
-dependency21.type=UsesDependency
-dependency22.from=Projectile
-dependency22.to=Asteroid
-dependency22.type=UsesDependency
-dependency23.from=Projectile
-dependency23.to=AsteroidMed
-dependency23.type=UsesDependency
-dependency24.from=Projectile
-dependency24.to=AsteroidSmall
-dependency24.type=UsesDependency
-dependency25.from=Projectile
-dependency25.to=Invader
-dependency25.type=UsesDependency
-dependency26.from=AsteroidSmall
-dependency26.to=SimpleTimer
-dependency26.type=UsesDependency
-dependency27.from=ButtonStart
-dependency27.to=GifImage
-dependency27.type=UsesDependency
-dependency28.from=ButtonStart
-dependency28.to=SpaceWorldEasy
-dependency28.type=UsesDependency
-dependency29.from=ButtonSkin
-dependency29.to=GifImage
->>>>>>> main
-dependency29.type=UsesDependency
-dependency3.from=SpaceWorldEasy
-dependency3.to=AsteroidMed
-dependency3.type=UsesDependency
-<<<<<<< HEAD
-dependency30.from=Projectile
-dependency30.to=Asteroid
-dependency30.type=UsesDependency
-dependency31.from=Projectile
-dependency31.to=AsteroidMed
-dependency31.type=UsesDependency
-dependency32.from=Projectile
-dependency32.to=AsteroidSmall
-dependency32.type=UsesDependency
-dependency33.from=Projectile
-dependency33.to=Invader
-dependency33.type=UsesDependency
-dependency34.from=AsteroidSmall
-dependency34.to=SimpleTimer
-dependency34.type=UsesDependency
-dependency35.from=Speed
-dependency35.to=Level
-dependency35.type=UsesDependency
-dependency36.from=Speed
-dependency36.to=Spaceship
-dependency36.type=UsesDependency
-dependency37.from=Weapon
-dependency37.to=Level
-dependency37.type=UsesDependency
-dependency38.from=Weapon
-dependency38.to=Shield
-dependency38.type=UsesDependency
-dependency39.from=Weapon
-dependency39.to=Spaceship
-dependency39.type=UsesDependency
-dependency4.from=SpaceWorldEasy
-dependency4.to=Invader
-dependency4.type=UsesDependency
-dependency40.from=Burst
-dependency40.to=SimpleTimer
-dependency40.type=UsesDependency
-dependency41.from=Burst
-dependency41.to=Level
-dependency41.type=UsesDependency
-dependency42.from=Burst
-dependency42.to=Projectile
-dependency42.type=UsesDependency
-dependency43.from=Burst
-dependency43.to=Spaceship
-dependency43.type=UsesDependency
-dependency44.from=ExtraLife
-dependency44.to=Level
-dependency44.type=UsesDependency
-dependency45.from=ExtraLife
-dependency45.to=Spaceship
-dependency45.type=UsesDependency
-dependency46.from=ButtonStart
-dependency46.to=GifImage
-dependency46.type=UsesDependency
-dependency47.from=ButtonStart
-dependency47.to=SpaceWorldEasy
-dependency47.type=UsesDependency
-dependency5.from=SpaceWorldEasy
-dependency5.to=PowerUp
-=======
-dependency4.from=SpaceWorldEasy
-dependency4.to=Invader
-dependency4.type=UsesDependency
-dependency5.from=SpaceWorld
-dependency5.to=Spaceship
->>>>>>> main
-dependency5.type=UsesDependency
-dependency6.from=SpaceWorld
-dependency6.to=AsteroidMed
-dependency6.type=UsesDependency
-dependency7.from=SpaceWorld
-dependency7.to=Invader
-dependency7.type=UsesDependency
-<<<<<<< HEAD
-dependency8.from=SpaceWorldEasy
-dependency8.to=Weapon
-dependency8.type=UsesDependency
-dependency9.from=SpaceWorldEasy
-dependency9.to=Burst
-dependency9.type=UsesDependency
-editor.fx.0.height=736
-editor.fx.0.width=1382
-editor.fx.0.x=-8
-editor.fx.0.y=-8
-height=736
-package.numDependencies=47
-package.numTargets=23
-=======
-dependency8.from=Menu
-dependency8.to=GifImage
-dependency8.type=UsesDependency
-dependency9.from=Menu
-dependency9.to=Button
-dependency9.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=686
-package.numDependencies=29
-package.numTargets=19
-=======
-=======
->>>>>>> main
-class.Projectile.image=Projectile.png
 class.Skin1.image=SpaceShip_Model1_Static.png
 class.Skin2.image=SpaceShip_Model2_Static.png
 class.Skin3.image=SpaceShip_Model3_Static.png
@@ -283,6 +24,7 @@ class.SpaceWorld.image=space1.jpg
 class.SpaceWorldEasy.image=space.jpg
 class.Spaceship.image=8Bit-X-Wing.png
 class.Speed.image=button-green.png
+class.Weapon.image=button-red\ (1).png
 dependency1.from=Menu
 dependency1.to=GifImage
 dependency1.type=UsesDependency
@@ -325,108 +67,150 @@ dependency20.type=UsesDependency
 dependency21.from=SpaceWorldEasy
 dependency21.to=Speed
 dependency21.type=UsesDependency
-dependency22.from=SpaceWorld
-dependency22.to=Spaceship
+dependency22.from=SpaceWorldEasy
+dependency22.to=Weapon
 dependency22.type=UsesDependency
-dependency23.from=SpaceWorld
-dependency23.to=AsteroidMed
+dependency23.from=SpaceWorldEasy
+dependency23.to=Burst
 dependency23.type=UsesDependency
 dependency24.from=SpaceWorld
-dependency24.to=Invader
+dependency24.to=Spaceship
 dependency24.type=UsesDependency
-dependency25.from=HostileProjectile
-dependency25.to=Spaceship
+dependency25.from=SpaceWorld
+dependency25.to=AsteroidMed
 dependency25.type=UsesDependency
-dependency26.from=Spaceship
-dependency26.to=SimpleTimer
+dependency26.from=SpaceWorld
+dependency26.to=Invader
 dependency26.type=UsesDependency
-dependency27.from=Spaceship
-dependency27.to=Projectile
+dependency27.from=Shield
+dependency27.to=Spaceship
 dependency27.type=UsesDependency
-dependency28.from=Spaceship
-dependency28.to=AsteroidSmall
+dependency28.from=Shield
+dependency28.to=Level
 dependency28.type=UsesDependency
-dependency29.from=Spaceship
+dependency29.from=Shield
 dependency29.to=Asteroid
 dependency29.type=UsesDependency
 dependency3.from=Menu
 dependency3.to=ButtonStart
 dependency3.type=UsesDependency
-dependency30.from=Spaceship
+dependency30.from=Shield
 dependency30.to=Invader
 dependency30.type=UsesDependency
-dependency31.from=AsteroidSmall
-dependency31.to=SimpleTimer
+dependency31.from=Shield
+dependency31.to=HostileProjectile
 dependency31.type=UsesDependency
-dependency32.from=Invader
-dependency32.to=SimpleTimer
+dependency32.from=HostileProjectile
+dependency32.to=Spaceship
 dependency32.type=UsesDependency
-dependency33.from=Invader
-dependency33.to=HostileProjectile
+dependency33.from=Spaceship
+dependency33.to=SimpleTimer
 dependency33.type=UsesDependency
-dependency34.from=Invader
-dependency34.to=Spaceship
+dependency34.from=Spaceship
+dependency34.to=Projectile
 dependency34.type=UsesDependency
-dependency35.from=Projectile
-dependency35.to=Asteroid
+dependency35.from=Spaceship
+dependency35.to=AsteroidSmall
 dependency35.type=UsesDependency
-dependency36.from=Projectile
-dependency36.to=AsteroidMed
+dependency36.from=Spaceship
+dependency36.to=Asteroid
 dependency36.type=UsesDependency
-dependency37.from=Projectile
-dependency37.to=AsteroidSmall
+dependency37.from=Spaceship
+dependency37.to=Invader
 dependency37.type=UsesDependency
-dependency38.from=Projectile
-dependency38.to=Invader
+dependency38.from=AsteroidSmall
+dependency38.to=SimpleTimer
 dependency38.type=UsesDependency
-dependency39.from=ExtraLife
-dependency39.to=Level
+dependency39.from=Invader
+dependency39.to=SimpleTimer
 dependency39.type=UsesDependency
 dependency4.from=Menu
 dependency4.to=ButtonSkin
 dependency4.type=UsesDependency
-dependency40.from=ExtraLife
-dependency40.to=Spaceship
+dependency40.from=Invader
+dependency40.to=HostileProjectile
 dependency40.type=UsesDependency
-dependency41.from=Speed
-dependency41.to=Level
+dependency41.from=Invader
+dependency41.to=Spaceship
 dependency41.type=UsesDependency
-dependency42.from=Speed
-dependency42.to=Spaceship
+dependency42.from=Projectile
+dependency42.to=Asteroid
 dependency42.type=UsesDependency
-dependency43.from=Skin4
-dependency43.to=SpaceWorldEasy
+dependency43.from=Projectile
+dependency43.to=AsteroidMed
 dependency43.type=UsesDependency
-dependency44.from=Skin3
-dependency44.to=SpaceWorldEasy
+dependency44.from=Projectile
+dependency44.to=AsteroidSmall
 dependency44.type=UsesDependency
-dependency45.from=Skin2
-dependency45.to=SpaceWorldEasy
+dependency45.from=Projectile
+dependency45.to=Invader
 dependency45.type=UsesDependency
-dependency46.from=Skin1
-dependency46.to=SpaceWorldEasy
+dependency46.from=Weapon
+dependency46.to=Level
 dependency46.type=UsesDependency
-dependency47.from=Skin7
-dependency47.to=SpaceWorldEasy
+dependency47.from=Weapon
+dependency47.to=Shield
 dependency47.type=UsesDependency
-dependency48.from=Skin6
-dependency48.to=SpaceWorldEasy
+dependency48.from=Weapon
+dependency48.to=Spaceship
 dependency48.type=UsesDependency
-dependency49.from=Skin5
-dependency49.to=SpaceWorldEasy
+dependency49.from=Burst
+dependency49.to=SimpleTimer
 dependency49.type=UsesDependency
 dependency5.from=Menu
 dependency5.to=Logo
 dependency5.type=UsesDependency
-dependency50.from=ButtonStart
-dependency50.to=GifImage
+dependency50.from=Burst
+dependency50.to=Level
 dependency50.type=UsesDependency
-dependency51.from=ButtonSkin
-dependency51.to=GifImage
+dependency51.from=Burst
+dependency51.to=Projectile
 dependency51.type=UsesDependency
+dependency52.from=Burst
+dependency52.to=Spaceship
+dependency52.type=UsesDependency
+dependency53.from=ExtraLife
+dependency53.to=Level
+dependency53.type=UsesDependency
+dependency54.from=ExtraLife
+dependency54.to=Spaceship
+dependency54.type=UsesDependency
+dependency55.from=Speed
+dependency55.to=Level
+dependency55.type=UsesDependency
+dependency56.from=Speed
+dependency56.to=Spaceship
+dependency56.type=UsesDependency
+dependency57.from=Skin4
+dependency57.to=SpaceWorldEasy
+dependency57.type=UsesDependency
+dependency58.from=Skin3
+dependency58.to=SpaceWorldEasy
+dependency58.type=UsesDependency
+dependency59.from=Skin2
+dependency59.to=SpaceWorldEasy
+dependency59.type=UsesDependency
 dependency6.from=Menu
 dependency6.to=ButtonReturn
 dependency6.type=UsesDependency
+dependency60.from=Skin1
+dependency60.to=SpaceWorldEasy
+dependency60.type=UsesDependency
+dependency61.from=Skin7
+dependency61.to=SpaceWorldEasy
+dependency61.type=UsesDependency
+dependency62.from=Skin6
+dependency62.to=SpaceWorldEasy
+dependency62.type=UsesDependency
+dependency63.from=Skin5
+dependency63.to=SpaceWorldEasy
+dependency63.type=UsesDependency
+dependency64.from=ButtonStart
+dependency64.to=GifImage
+dependency64.type=UsesDependency
+dependency65.from=ButtonSkin
+dependency65.to=GifImage
+dependency65.type=UsesDependency
 dependency7.from=Menu
 dependency7.to=Aspect
 dependency7.type=UsesDependency
@@ -440,17 +224,9 @@ editor.fx.0.height=685
 editor.fx.0.width=1113
 editor.fx.0.x=136
 editor.fx.0.y=92
-<<<<<<< HEAD
-height=742
-package.numDependencies=48
-package.numTargets=29
->>>>>>> main
->>>>>>> main
-=======
 height=1056
-package.numDependencies=51
+package.numDependencies=65
 package.numTargets=34
->>>>>>> main
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -473,192 +249,72 @@ target1.width=120
 target1.x=0
 target1.y=0
 target10.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target10.name=Weapon
-=======
-<<<<<<< HEAD
-target10.name=GifImage
-=======
-target10.name=Menu
->>>>>>> main
->>>>>>> main
-=======
 target10.name=Button
->>>>>>> main
 target10.showInterface=false
 target10.type=AbstractTarget
 target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target11.name=Projectile
-=======
-<<<<<<< HEAD
-target11.name=ButtonStart
-=======
-target11.name=MyWorld
->>>>>>> main
->>>>>>> main
-=======
 target11.name=Burst
->>>>>>> main
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
 target11.x=0
 target11.y=0
 target12.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target12.name=GifImage
-=======
-<<<<<<< HEAD
-target12.name=Asteroid
-=======
-target12.name=Speed
->>>>>>> main
->>>>>>> main
-=======
 target12.name=ExtraLife
->>>>>>> main
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target13.name=ButtonStart
-=======
-<<<<<<< HEAD
-target13.name=Button
-=======
-target13.name=SpaceWorldEasy
->>>>>>> main
->>>>>>> main
-=======
 target13.name=Menu
->>>>>>> main
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target14.name=Asteroid
-=======
-<<<<<<< HEAD
-target14.name=Level
-=======
-target14.name=SimpleTimer
->>>>>>> main
->>>>>>> main
-=======
 target14.name=MyWorld
->>>>>>> main
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target15.name=Button
-=======
-<<<<<<< HEAD
-target15.name=Menu
-=======
-target15.name=Invader
->>>>>>> main
->>>>>>> main
-=======
 target15.name=ButtonSkin
->>>>>>> main
 target15.showInterface=false
-target15.type=AbstractTarget
+target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
 target16.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target16.name=Burst
-=======
-<<<<<<< HEAD
-target16.name=MyWorld
-=======
-target16.name=Projectile
->>>>>>> main
->>>>>>> main
-=======
 target16.name=Speed
->>>>>>> main
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=120
 target16.x=0
 target16.y=0
 target17.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target17.name=PowerUp
-=======
-<<<<<<< HEAD
-target17.name=SpaceWorld
-=======
-target17.name=GifImage
->>>>>>> main
->>>>>>> main
-=======
 target17.name=SpaceWorldEasy
->>>>>>> main
 target17.showInterface=false
-target17.type=AbstractTarget
+target17.type=ClassTarget
 target17.width=120
 target17.x=0
 target17.y=0
 target18.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target18.name=ExtraLife
-=======
-<<<<<<< HEAD
-target18.name=AsteroidMed
-=======
-target18.name=Skin4
->>>>>>> main
->>>>>>> main
-=======
 target18.name=SimpleTimer
->>>>>>> main
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=120
 target18.x=0
 target18.y=0
 target19.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target19.name=Level
-=======
-<<<<<<< HEAD
-target19.name=ButtonSkin
-=======
-target19.name=Skin3
->>>>>>> main
->>>>>>> main
-=======
 target19.name=Invader
->>>>>>> main
 target19.showInterface=false
-target19.type=AbstractTarget
+target19.type=ClassTarget
 target19.width=120
 target19.x=0
 target19.y=0
@@ -670,71 +326,33 @@ target2.width=120
 target2.x=0
 target2.y=0
 target20.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target20.name=Menu
-=======
-target20.name=Skin2
->>>>>>> main
-=======
 target20.name=Logo
->>>>>>> main
 target20.showInterface=false
 target20.type=ClassTarget
 target20.width=120
 target20.x=0
 target20.y=0
 target21.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target21.name=MyWorld
-=======
-target21.name=Skin1
->>>>>>> main
-=======
 target21.name=Projectile
->>>>>>> main
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=120
 target21.x=0
 target21.y=0
 target22.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target22.name=SpaceWorld
-target22.showInterface=false
-target22.type=ClassTarget
-=======
-target22.name=PowerUp
-target22.showInterface=false
-target22.type=AbstractTarget
->>>>>>> main
-=======
 target22.name=GifImage
 target22.showInterface=false
 target22.type=ClassTarget
->>>>>>> main
 target22.width=120
 target22.x=0
 target22.y=0
 target23.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target23.name=AsteroidMed
-=======
-target23.name=Skin7
->>>>>>> main
-=======
 target23.name=Skin4
->>>>>>> main
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=120
 target23.x=0
 target23.y=0
-<<<<<<< HEAD
-=======
 target24.height=70
 target24.name=Skin3
 target24.showInterface=false
@@ -777,7 +395,6 @@ target29.type=AbstractTarget
 target29.width=120
 target29.x=0
 target29.y=0
->>>>>>> main
 target3.height=70
 target3.name=HostileProjectile
 target3.showInterface=false
@@ -821,131 +438,49 @@ target34.width=120
 target34.x=0
 target34.y=0
 target4.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target4.name=Shield
-=======
-<<<<<<< HEAD
-target4.name=HostileProjectile
-=======
-target4.name=Aspect
->>>>>>> main
->>>>>>> main
-=======
 target4.name=Spaceship
->>>>>>> main
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target5.name=SimpleTimer
-=======
-<<<<<<< HEAD
-target5.name=Spaceship
-=======
-target5.name=AsteroidSmall
->>>>>>> main
->>>>>>> main
-=======
 target5.name=Aspect
->>>>>>> main
 target5.showInterface=false
 target5.type=AbstractTarget
 target5.width=120
 target5.x=0
 target5.y=0
 target6.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target6.name=HostileProjectile
-=======
-<<<<<<< HEAD
-target6.name=Invader
-=======
-target6.name=ButtonStart
->>>>>>> main
->>>>>>> main
-=======
 target6.name=AsteroidSmall
->>>>>>> main
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target7.name=Spaceship
-=======
-<<<<<<< HEAD
-target7.name=AsteroidSmall
-=======
-target7.name=Asteroid
->>>>>>> main
->>>>>>> main
-=======
 target7.name=Weapon
->>>>>>> main
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
 target7.x=0
 target7.y=0
 target8.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target8.name=Invader
-=======
-<<<<<<< HEAD
-target8.name=Logo
-=======
-target8.name=Button
->>>>>>> main
->>>>>>> main
-=======
 target8.name=ButtonStart
->>>>>>> main
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=120
 target8.x=0
 target8.y=0
 target9.height=70
-<<<<<<< HEAD
-<<<<<<< HEAD
-target9.name=AsteroidSmall
-=======
-<<<<<<< HEAD
-target9.name=Projectile
-=======
-target9.name=ExtraLife
->>>>>>> main
->>>>>>> main
-=======
 target9.name=Asteroid
->>>>>>> main
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-width=1382
-world.lastInstantiated=SpaceWorldEasy
-=======
-<<<<<<< HEAD
-width=1294
-=======
 width=1936
->>>>>>> main
 world.lastInstantiated=Menu
->>>>>>> main
 xPosition=0
 yPosition=0

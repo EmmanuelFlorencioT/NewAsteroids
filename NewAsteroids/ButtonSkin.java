@@ -22,8 +22,7 @@ public class ButtonSkin extends Button
     public boolean getPressButton(){
         if(Greenfoot.mousePressed(this) == true){
             //SpaceWorldEasy level1 = new SpaceWorldEasy();
-           // Greenfoot.setWorld(level1);
-            
+            //Greenfoot.setWorld(level1);
         }
         return true;
     }
