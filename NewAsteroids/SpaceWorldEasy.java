@@ -33,10 +33,13 @@ public class SpaceWorldEasy extends Level
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         setMaxNumOfAsteroids(3);
         setMaxNumOfInvaders(1);
+        setMaxNumOfPowerUp(1);
         setAsteroidInterval(20);
         setInvaderInterval(500);
+        setPowerUpInterval(750);
         astCall.mark(); //Start the timer
         invCall.mark();
+        powCall.mark();
         prepare(skin);
     }
     /**
@@ -65,36 +68,10 @@ public class SpaceWorldEasy extends Level
         if(astCall.millisElapsed() > getAsteroidInterval()){
             if(getNumOfAsteroids() < getMaxNumOfAsteroids() && Greenfoot.getRandomNumber(1000) < 20){
                 addAsteroid();
-//<<<<<<< HEAD
                 int bandSprite = Greenfoot.getRandomNumber(3) + 1;
-                int location = Greenfoot.getRandomNumber(4);
-                int direction = Greenfoot.getRandomNumber(178);
-                int offsetX = Greenfoot.getRandomNumber(getWidth()-20) + 10;
-                int offsetY = Greenfoot.getRandomNumber(getHeight() - 20) + 10;
                 AsteroidMed a = new AsteroidMed();
                 a.asteroidsSpritesMed(bandSprite);
-                switch(location){
-                    case 0: //Superior edge
-                        a.setRotation(direction + 1);
-                        addObject(a, offsetX, 25);
-                        break;
-                    case 1: //Inferior edge
-                        a.setRotation(direction + 181);
-                        addObject(a, offsetX, getHeight() - 25);
-                        break;
-                    case 2: //Right edge
-                        a.setRotation(direction + 91);
-                        addObject(a, getWidth() - 25, offsetY);
-                        break;
-                    case 3: //Left edge
-                        a.setRotation(direction + 270);
-                        addObject(a, 25, offsetY);
-                        break;
-                }
-//=======
-                //AsteroidMed a = new AsteroidMed();
                 spawnInLocation(a);
-//>>>>>>> main
             }
             astCall.mark(); //Reset Timer
         }
@@ -115,7 +92,7 @@ public class SpaceWorldEasy extends Level
         if(powCall.millisElapsed() > getPowerUpInterval()){
             if(getNumOfPowerUp() < getMaxNumOfPowerUp() && Greenfoot.getRandomNumber(1000) < 500){
                 addPowerUp();
-                int typeOfPowerUp = Greenfoot.getRandomNumber(2);
+                int typeOfPowerUp = Greenfoot.getRandomNumber(1);
                 PowerUp pUp = null;
                 switch(typeOfPowerUp){
                     case 0: //ExtraLife
@@ -123,6 +100,12 @@ public class SpaceWorldEasy extends Level
                         break;
                     case 1: //Speed
                         pUp = new Speed();
+                        break;
+                    case 2: //Shield
+                        pUp = new Weapon();
+                        break;
+                    case 3: //Burst
+                        pUp = new Burst();
                         break;
                 }
                 spawnInLocation(pUp);
