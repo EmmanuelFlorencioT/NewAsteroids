@@ -11,7 +11,7 @@ public class Invader extends SpaceObject
     /*Invader needs reference to the player*/
     
     private SimpleTimer shotTimer = new SimpleTimer();
-    private int SHOT_INT = 1000;
+    private int SHOT_INT = 7500;
     /**
      * Act - do whatever the Invader wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
