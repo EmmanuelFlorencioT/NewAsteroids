@@ -47,8 +47,13 @@ public class Projectile extends SpaceObject
             ((Asteroid)asteroid).subLife();
             if(asteroid instanceof AsteroidMed){
                 /*Two new asteroids are spawned with slightly less speed than the normal*/
+                int bandSprite;
+                bandSprite = Greenfoot.getRandomNumber(3) + 1;
                 AsteroidSmall ast1 = new AsteroidSmall(2, Greenfoot.getRandomNumber(360));
+                ast1.asteroidsSpriteSmall(bandSprite);
+                bandSprite = Greenfoot.getRandomNumber(3) + 1;
                 AsteroidSmall ast2 = new AsteroidSmall(2, Greenfoot.getRandomNumber(360));
+                ast2.asteroidsSpriteSmall(bandSprite);
                 getWorld().addObject(ast1, this.getX() + Greenfoot.getRandomNumber(5), 
                                            this.getY() + Greenfoot.getRandomNumber(5));
                 getWorld().addObject(ast2, this.getX() + Greenfoot.getRandomNumber(5), 

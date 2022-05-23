@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ButtonStart here.
+ * Write a description of class ButtonPlay here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ButtonStart extends Button
+public class ButtonPlay extends Button
 {
-    private GifImage buttonStart = new GifImage("StartButton.gif");
+    private GifImage buttonPlay = new GifImage("PlayButton.gif");
     /**
      * Act - do whatever the ButtonStart wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,7 +17,7 @@ public class ButtonStart extends Button
     public void act()
     {
         // Add your action code here.
-        setImage(buttonStart.getCurrentImage());
+        setImage(buttonPlay.getCurrentImage());
     }
     @Override
     public boolean getPressButton(){
