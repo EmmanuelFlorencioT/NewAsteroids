@@ -40,7 +40,7 @@ public class Burst extends PowerUp
         shotCool1.mark();
         
         if(player != null){
-            while(shotCool1.millisElapsed() < 2400){
+            while(shotCool1.millisElapsed() < 200){
                 if(shotCool.millisElapsed() > SHOT_INT){
                     this.direction = direction + 2;
                     Projectile p = new Projectile(5,this.direction);

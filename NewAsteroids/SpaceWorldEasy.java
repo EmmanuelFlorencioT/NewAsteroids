@@ -92,7 +92,7 @@ public class SpaceWorldEasy extends Level
         if(powCall.millisElapsed() > getPowerUpInterval()){
             if(getNumOfPowerUp() < getMaxNumOfPowerUp() && Greenfoot.getRandomNumber(1000) < 500){
                 addPowerUp();
-                int typeOfPowerUp = Greenfoot.getRandomNumber(1);
+                int typeOfPowerUp = Greenfoot.getRandomNumber(4);
                 PowerUp pUp = null;
                 switch(typeOfPowerUp){
                     case 0: //ExtraLife
