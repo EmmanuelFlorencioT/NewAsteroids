@@ -18,9 +18,7 @@ public class Menu extends World
     private Button return_menu = new ButtonReturn();
     //add the skin from spaceship
     private ArrayList <Aspect> skins = new ArrayList<Aspect>();
-    private GreenfootSound backgroundMusic = new GreenfootSound("MenuAudio.mp3");
     private boolean check_init_game = false;
-    private Character skin;
 //>>>>>>> main
     /**
      * Constructor for objects of class Menu.
@@ -78,6 +76,7 @@ public class Menu extends World
     public void SelectOptionsMenu(){
         if(start.getPressButton() == true){
             removeObjects(getObjects(Button.class));
+            removeObjects(getObjects(Logo.class));
             Addcharacters();
         }
         if(return_menu.getPressButton() == true){
