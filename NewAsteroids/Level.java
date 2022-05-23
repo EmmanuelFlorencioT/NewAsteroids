@@ -48,6 +48,9 @@ public abstract class Level extends World
     public int getAsteroidInterval(){
         return this.ASTEROID_INT;
     }
+    public void subAsteroid(){
+        this.numOfAsteroids--;
+    }
     
     /*Invader Handling*/
     public void setMaxNumOfInvaders(int maxInv){
@@ -67,6 +70,9 @@ public abstract class Level extends World
     }
     public int getInvaderInterval(){
         return this.INVADER_INT;
+    }
+    public void subInvader(){
+        this.numOfInvaders--;
     }
     
     /*PowerUp Handling*/
