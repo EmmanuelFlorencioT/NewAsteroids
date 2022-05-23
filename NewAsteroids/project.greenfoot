@@ -1,7 +1,30 @@
 #Greenfoot project file
 class.AsteroidMed.image=AsteroidMed.png
 class.AsteroidSmall.image=AsteroidSmall.png
+<<<<<<< HEAD
+<<<<<<< HEAD
+class.ButtonPlay.image=PlayButton.gif
+class.ButtonReturn.image=ReturnButton.gif
+class.ButtonStart.image=StartButton.gif
+class.ExtraLife.image=button-yellow.png
+class.HostileProjectile.image=EnemyProjectile_Version2.png
+class.Invader.image=8bit-Invader.png
+class.Logo.image=Logo_version1.png
+class.Menu.image=backgroundMenu.gif
+class.Projectile.image=Projectile_Version2.png
+class.SelectSpaceship.image=TextSelect.png
+class.SelectionSquare.image=SelectionSquare.gif
+class.Skin1.image=SpaceShip_Model1_Selection.png
+class.Skin2.image=SpaceShip_Model2_Selection.png
+class.Skin3.image=SpaceShip_Model3_Selection.png
+class.Skin4.image=SpaceShip_Model4_Selection.png
+class.Skin5.image=SpaceShip_Model5_Selection.png
+class.Skin6.image=SpaceShip_Model6_Selection.png
+class.Skin7.image=SpaceShip_Model7_Selection.png
+=======
+=======
 class.Burst.image=button-blue.png
+>>>>>>> main
 class.ButtonReturn.image=ButtonStart.gif
 class.ButtonSkin.image=SkinButton.gif
 class.ButtonStart.image=ButtonStart.gif
@@ -20,15 +43,46 @@ class.Skin4.image=SpaceShip_Model4_Static.png
 class.Skin5.image=SpaceShip_Model5_Static.png
 class.Skin6.image=SpaceShip_Model6_Static.png
 class.Skin7.image=SpaceShip_Model7_Static.png
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
 class.SpaceWorld.image=space1.jpg
-class.SpaceWorldEasy.image=space.jpg
-class.Spaceship.image=8Bit-X-Wing.png
+class.SpaceWorldEasy.image=Background_Level1.png
+class.Spaceship.image=SpaceShip_Model1_Static.png
 class.Speed.image=button-green.png
 class.Weapon.image=button-red\ (1).png
 dependency1.from=Menu
 dependency1.to=GifImage
 dependency1.type=UsesDependency
 dependency10.from=Menu
+<<<<<<< HEAD
+dependency10.to=Skin1
+dependency10.type=UsesDependency
+dependency11.from=Menu
+dependency11.to=Skin2
+dependency11.type=UsesDependency
+dependency12.from=Menu
+dependency12.to=Skin3
+dependency12.type=UsesDependency
+dependency13.from=Menu
+dependency13.to=Skin4
+dependency13.type=UsesDependency
+dependency14.from=Menu
+dependency14.to=Skin5
+dependency14.type=UsesDependency
+dependency15.from=Menu
+dependency15.to=Skin6
+dependency15.type=UsesDependency
+dependency16.from=Menu
+dependency16.to=Skin7
+dependency16.type=UsesDependency
+dependency17.from=Menu
+dependency17.to=SpaceWorldEasy
+dependency17.type=UsesDependency
+dependency18.from=Level
+dependency18.to=SimpleTimer
+dependency18.type=UsesDependency
+dependency19.from=SpaceWorldEasy
+dependency19.to=Spaceship
+=======
 dependency10.to=Skin3
 dependency10.type=UsesDependency
 dependency11.from=Menu
@@ -57,11 +111,42 @@ dependency18.to=Invader
 dependency18.type=UsesDependency
 dependency19.from=SpaceWorldEasy
 dependency19.to=PowerUp
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
 dependency19.type=UsesDependency
 dependency2.from=Menu
 dependency2.to=Button
 dependency2.type=UsesDependency
 dependency20.from=SpaceWorldEasy
+<<<<<<< HEAD
+dependency20.to=AsteroidMed
+dependency20.type=UsesDependency
+dependency21.from=SpaceWorldEasy
+dependency21.to=Invader
+dependency21.type=UsesDependency
+dependency22.from=SpaceWorldEasy
+dependency22.to=PowerUp
+dependency22.type=UsesDependency
+dependency23.from=SpaceWorldEasy
+dependency23.to=ExtraLife
+dependency23.type=UsesDependency
+dependency24.from=SpaceWorldEasy
+dependency24.to=Speed
+dependency24.type=UsesDependency
+dependency25.from=SpaceWorld
+dependency25.to=Spaceship
+dependency25.type=UsesDependency
+dependency26.from=SpaceWorld
+dependency26.to=AsteroidMed
+dependency26.type=UsesDependency
+dependency27.from=SpaceWorld
+dependency27.to=Invader
+dependency27.type=UsesDependency
+dependency28.from=HostileProjectile
+dependency28.to=Spaceship
+dependency28.type=UsesDependency
+dependency29.from=Spaceship
+dependency29.to=SimpleTimer
+=======
 dependency20.to=ExtraLife
 dependency20.type=UsesDependency
 dependency21.from=SpaceWorldEasy
@@ -90,11 +175,73 @@ dependency28.to=Level
 dependency28.type=UsesDependency
 dependency29.from=Shield
 dependency29.to=Asteroid
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
 dependency29.type=UsesDependency
 dependency3.from=Menu
 dependency3.to=ButtonStart
 dependency3.type=UsesDependency
+<<<<<<< HEAD
+dependency30.from=Spaceship
+<<<<<<< HEAD
+dependency30.to=Projectile
+dependency30.type=UsesDependency
+dependency31.from=Spaceship
+dependency31.to=AsteroidSmall
+dependency31.type=UsesDependency
+dependency32.from=Spaceship
+dependency32.to=Asteroid
+dependency32.type=UsesDependency
+dependency33.from=Spaceship
+dependency33.to=Invader
+dependency33.type=UsesDependency
+dependency34.from=AsteroidSmall
+dependency34.to=SimpleTimer
+dependency34.type=UsesDependency
+dependency35.from=Invader
+dependency35.to=SimpleTimer
+dependency35.type=UsesDependency
+dependency36.from=Invader
+dependency36.to=HostileProjectile
+dependency36.type=UsesDependency
+dependency37.from=Invader
+dependency37.to=Spaceship
+dependency37.type=UsesDependency
+dependency38.from=Projectile
+dependency38.to=Asteroid
+dependency38.type=UsesDependency
+dependency39.from=Projectile
+dependency39.to=AsteroidMed
+dependency39.type=UsesDependency
+dependency4.from=Menu
+dependency4.to=ButtonPlay
+dependency4.type=UsesDependency
+dependency40.from=Projectile
+dependency40.to=AsteroidSmall
+dependency40.type=UsesDependency
+dependency41.from=Projectile
+dependency41.to=Invader
+dependency41.type=UsesDependency
+dependency42.from=ExtraLife
+dependency42.to=Level
+dependency42.type=UsesDependency
+dependency43.from=ExtraLife
+dependency43.to=Spaceship
+dependency43.type=UsesDependency
+dependency44.from=Speed
+dependency44.to=Level
+dependency44.type=UsesDependency
+dependency45.from=Speed
+dependency45.to=Spaceship
+dependency45.type=UsesDependency
+dependency46.from=SelectionSquare
+dependency46.to=GifImage
+dependency46.type=UsesDependency
+dependency47.from=ButtonPlay
+dependency47.to=GifImage
+=======
+=======
 dependency30.from=Shield
+>>>>>>> main
 dependency30.to=Invader
 dependency30.type=UsesDependency
 dependency31.from=Shield
@@ -148,17 +295,36 @@ dependency45.type=UsesDependency
 dependency46.from=Weapon
 dependency46.to=Level
 dependency46.type=UsesDependency
+<<<<<<< HEAD
+dependency47.from=Skin7
+dependency47.to=SpaceWorldEasy
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
 dependency47.from=Weapon
 dependency47.to=Shield
+>>>>>>> main
 dependency47.type=UsesDependency
 dependency48.from=Weapon
 dependency48.to=Spaceship
 dependency48.type=UsesDependency
+<<<<<<< HEAD
+<<<<<<< HEAD
+dependency49.from=ButtonReturn
+dependency49.to=GifImage
+dependency49.type=UsesDependency
+dependency5.from=Menu
+dependency5.to=SelectionSquare
+=======
+dependency49.from=Skin5
+dependency49.to=SpaceWorldEasy
+=======
 dependency49.from=Burst
 dependency49.to=SimpleTimer
+>>>>>>> main
 dependency49.type=UsesDependency
 dependency5.from=Menu
 dependency5.to=Logo
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
 dependency5.type=UsesDependency
 dependency50.from=Burst
 dependency50.to=Level
@@ -191,6 +357,26 @@ dependency59.from=Skin2
 dependency59.to=SpaceWorldEasy
 dependency59.type=UsesDependency
 dependency6.from=Menu
+<<<<<<< HEAD
+dependency6.to=Logo
+dependency6.type=UsesDependency
+dependency7.from=Menu
+dependency7.to=SelectSpaceship
+dependency7.type=UsesDependency
+dependency8.from=Menu
+dependency8.to=ButtonReturn
+dependency8.type=UsesDependency
+dependency9.from=Menu
+dependency9.to=Aspect
+dependency9.type=UsesDependency
+editor.fx.0.height=686
+editor.fx.0.width=1294
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=686
+package.numDependencies=49
+package.numTargets=33
+=======
 dependency6.to=ButtonReturn
 dependency6.type=UsesDependency
 dependency60.from=Skin1
@@ -222,11 +408,23 @@ dependency9.to=Skin2
 dependency9.type=UsesDependency
 editor.fx.0.height=685
 editor.fx.0.width=1113
+<<<<<<< HEAD
+editor.fx.0.x=75
+editor.fx.0.y=8
+height=686
+package.numDependencies=48
+package.numTargets=33
+=======
 editor.fx.0.x=136
 editor.fx.0.y=92
 height=1056
 package.numDependencies=65
 package.numTargets=34
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -237,7 +435,7 @@ publish.title=
 publish.url=
 readme.height=60
 readme.name=@README
-readme.width=49
+readme.width=48
 readme.x=10
 readme.y=10
 simulation.speed=50
@@ -256,7 +454,15 @@ target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
+<<<<<<< HEAD
+target11.name=SelectSpaceship
+=======
 target11.name=Burst
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
@@ -284,35 +490,78 @@ target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< HEAD
+target15.name=Speed
+=======
 target15.name=ButtonSkin
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
 target16.height=70
+<<<<<<< HEAD
+target16.name=SpaceWorldEasy
+=======
 target16.name=Speed
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=120
 target16.x=0
 target16.y=0
 target17.height=70
+<<<<<<< HEAD
+target17.name=SimpleTimer
+=======
 target17.name=SpaceWorldEasy
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=120
 target17.x=0
 target17.y=0
 target18.height=70
+<<<<<<< HEAD
+target18.name=Invader
+=======
 target18.name=SimpleTimer
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=120
 target18.x=0
 target18.y=0
 target19.height=70
+<<<<<<< HEAD
+<<<<<<< HEAD
+target19.name=Logo
+=======
 target19.name=Invader
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+target19.name=Projectile
+=======
+target19.name=Invader
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=120
@@ -326,110 +575,228 @@ target2.width=120
 target2.x=0
 target2.y=0
 target20.height=70
+<<<<<<< HEAD
+target20.name=Projectile
+=======
 target20.name=Logo
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
 target20.showInterface=false
 target20.type=ClassTarget
 target20.width=120
 target20.x=0
 target20.y=0
 target21.height=70
+<<<<<<< HEAD
+target21.name=GifImage
+=======
 target21.name=Projectile
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=120
 target21.x=0
 target21.y=0
 target22.height=70
+<<<<<<< HEAD
+target22.name=Skin4
+=======
 target22.name=GifImage
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target22.showInterface=false
 target22.type=ClassTarget
 target22.width=120
 target22.x=0
 target22.y=0
 target23.height=70
+<<<<<<< HEAD
+target23.name=Skin3
+=======
 target23.name=Skin4
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=120
 target23.x=0
 target23.y=0
 target24.height=70
+<<<<<<< HEAD
+target24.name=Skin2
+=======
 target24.name=Skin3
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target24.showInterface=false
 target24.type=ClassTarget
 target24.width=120
 target24.x=0
 target24.y=0
 target25.height=70
+<<<<<<< HEAD
+target25.name=Skin1
+=======
 target25.name=Skin2
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target25.showInterface=false
 target25.type=ClassTarget
 target25.width=120
 target25.x=0
 target25.y=0
 target26.height=70
+<<<<<<< HEAD
+target26.name=PowerUp
+=======
 target26.name=Skin1
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target26.showInterface=false
-target26.type=ClassTarget
+target26.type=AbstractTarget
 target26.width=120
 target26.x=0
 target26.y=0
 target27.height=70
+<<<<<<< HEAD
+target27.name=Skin7
+=======
 target27.name=PowerUp
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target27.showInterface=false
 target27.type=AbstractTarget
 target27.width=120
 target27.x=0
 target27.y=0
 target28.height=70
+<<<<<<< HEAD
+target28.name=Level
+=======
 target28.name=Skin7
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target28.showInterface=false
-target28.type=ClassTarget
+target28.type=AbstractTarget
 target28.width=120
 target28.x=0
 target28.y=0
 target29.height=70
+<<<<<<< HEAD
+target29.name=Skin6
+=======
 target29.name=Level
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target29.showInterface=false
 target29.type=AbstractTarget
 target29.width=120
 target29.x=0
 target29.y=0
 target3.height=70
+<<<<<<< HEAD
+target3.name=SelectionSquare
+=======
 target3.name=HostileProjectile
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
 target30.height=70
+<<<<<<< HEAD
+target30.name=Skin5
+=======
 target30.name=Skin6
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target30.showInterface=false
 target30.type=ClassTarget
 target30.width=120
 target30.x=0
 target30.y=0
 target31.height=70
+<<<<<<< HEAD
+target31.name=ButtonReturn
+=======
 target31.name=Skin5
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target31.showInterface=false
 target31.type=ClassTarget
 target31.width=120
 target31.x=0
 target31.y=0
 target32.height=70
+<<<<<<< HEAD
+target32.name=SpaceWorld
+=======
 target32.name=ButtonReturn
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target32.showInterface=false
 target32.type=ClassTarget
 target32.width=120
 target32.x=0
 target32.y=0
 target33.height=70
+<<<<<<< HEAD
+target33.name=AsteroidMed
+=======
 target33.name=SpaceWorld
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target33.showInterface=false
 target33.type=ClassTarget
 target33.width=120
 target33.x=0
 target33.y=0
+<<<<<<< HEAD
+=======
 target34.height=70
 target34.name=AsteroidMed
 target34.showInterface=false
@@ -437,6 +804,11 @@ target34.type=ClassTarget
 target34.width=120
 target34.x=0
 target34.y=0
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target4.height=70
 target4.name=Spaceship
 target4.showInterface=false
@@ -445,21 +817,45 @@ target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
+<<<<<<< HEAD
+target5.name=ButtonPlay
+=======
 target5.name=Aspect
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target5.showInterface=false
 target5.type=AbstractTarget
 target5.width=120
 target5.x=0
 target5.y=0
 target6.height=70
+<<<<<<< HEAD
+target6.name=Aspect
+=======
 target6.name=AsteroidSmall
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target6.showInterface=false
-target6.type=ClassTarget
+target6.type=AbstractTarget
 target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
+<<<<<<< HEAD
+target7.name=AsteroidSmall
+=======
 target7.name=Weapon
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
@@ -480,7 +876,15 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
+width=1294
+=======
 width=1936
+<<<<<<< HEAD
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
+=======
+>>>>>>> 9fa0c041afbeac8ea9a3ef200ac5ca85605a2fa9
+>>>>>>> main
 world.lastInstantiated=Menu
 xPosition=0
 yPosition=0

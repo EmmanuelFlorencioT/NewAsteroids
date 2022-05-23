@@ -53,7 +53,7 @@ public class Projectile extends SpaceObject
                 ast1.asteroidsSpriteSmall(bandSprite);
                 bandSprite = Greenfoot.getRandomNumber(3) + 1;
                 AsteroidSmall ast2 = new AsteroidSmall(2, Greenfoot.getRandomNumber(360));
-                ast1.asteroidsSpriteSmall(bandSprite);
+                ast2.asteroidsSpriteSmall(bandSprite);
                 getWorld().addObject(ast1, this.getX() + Greenfoot.getRandomNumber(5), 
                                            this.getY() + Greenfoot.getRandomNumber(5));
                 getWorld().addObject(ast2, this.getX() + Greenfoot.getRandomNumber(5), 
