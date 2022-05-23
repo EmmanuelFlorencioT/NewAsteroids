@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ButtonStart extends Button
 {
-    private GifImage buttonStart = new GifImage("ButtonStart.gif");
+    private GifImage buttonStart = new GifImage("StartButton.gif");
     /**
      * Act - do whatever the ButtonStart wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -20,11 +20,7 @@ public class ButtonStart extends Button
         setImage(buttonStart.getCurrentImage());
     }
     @Override
-    public void getPressButton(){
-        if(Greenfoot.mousePressed(this) == true){
-            SpaceWorldEasy level1 = new SpaceWorldEasy();
-            Greenfoot.setWorld(level1);
-            
-        }
+    public boolean getPressButton(){
+        return Greenfoot.mousePressed(this);
     }
 }
