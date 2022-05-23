@@ -23,10 +23,13 @@ public class Menu extends World
     //SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model1_Static.png");
     private ArrayList <Aspect> skins = new ArrayList<Aspect>();
     private boolean check_init_game = false;
+<<<<<<< HEAD
     private Character skin;
     private int bandSpaceShip;
     private boolean bandSelect = false;
     private int bandX,bandY;
+=======
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
 //>>>>>>> main
     /**
      * Constructor for objects of class Menu.
@@ -97,7 +100,10 @@ public class Menu extends World
         if(play.getPressButton() == true){
             removeObjects(getObjects(Button.class));
             removeObjects(getObjects(Logo.class));
+<<<<<<< HEAD
             
+=======
+>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
             Addcharacters();
         }
         if(return_menu.getPressButton() == true){
