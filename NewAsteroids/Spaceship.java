@@ -13,6 +13,8 @@ public class Spaceship extends SpaceObject
     private final int ACTIVE_PWRUP = 200; //Number of cycles power up will be active
     private int powerupTimeLeft = ACTIVE_PWRUP;
     private boolean shotReady, powerActive = false;
+    private String nameSkin;
+    //private GameOver gameover = new GameOver();
     /**
      * Act - do whatever the Spaceship wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -29,7 +31,9 @@ public class Spaceship extends SpaceObject
             }
         } else {
             getWorld().removeObject(this);
-            Greenfoot.stop(); /*We will stop the execution of the game (for now)*/
+            GameOver gameover = new GameOver(getSkin());
+            Greenfoot.setWorld(gameover);
+            //Greenfoot.stop(); /*We will stop the execution of the game (for now)*/
         }
     }
     
@@ -41,6 +45,7 @@ public class Spaceship extends SpaceObject
     public Spaceship(String skin){
         this.setRotation(-90);
         shotReady = true;
+        nameSkin = skin;
         setImage(skin);
     }
     
@@ -126,5 +131,9 @@ public class Spaceship extends SpaceObject
             setSpeed(3);
             powerupTimeLeft = ACTIVE_PWRUP; //Reset timer
         }
+    }
+    
+    public String getSkin(){
+        return this.nameSkin;
     }
 }
