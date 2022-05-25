@@ -11,23 +11,18 @@ public class Menu extends World
     private GifImage background = new GifImage("backgroundMenu.gif");
     private Button start = new ButtonStart();
     private Button play = new ButtonPlay();
+    private Button return_menu = new ButtonReturn();
 //<<<<<<< HEAD
     private SelectionSquare square = new SelectionSquare();
     private GreenfootSound backgroundMusic = new GreenfootSound("MenuAudio.mp3");
     private Logo logo = new Logo();
     private SelectSpaceship textSelect = new SelectSpaceship();
-    
 ////=======
-    private Button return_menu = new ButtonReturn();
-    //add the skin from spaceship
-    //SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model1_Static.png");
+    //player skins added in an array
     private ArrayList <Aspect> skins = new ArrayList<Aspect>();
-    private boolean check_init_game = false;
 //<<<<<<< HEAD
-    private Character skin;
-    private int bandSpaceShip;
-    private boolean bandSelect = false;
-    private int bandX,bandY;
+    //location of the 1st skin
+    private int bandX=75,bandY=100;
 //=======
 //>>>>>>> 8d11c3110caf481785bb0cdeee72f29f9c649bb4
 //>>>>>>> main
@@ -51,23 +46,27 @@ public class Menu extends World
         skins.add(new Skin6());
         skins.add(new Skin7());
     }
+    
     public Aspect getSkins(int typeskin){
         return skins.get(typeskin);
     }
 
     public void AddOptionsSkin(){
-        int aum=0;
-        for(int j=0; j<=(skins.size())/4; j++){
-            aum=0;
-            for(int i=(4*j); i < skins.size()-3+(3*j); i++){
-                addObject(getSkins(i), 75+(150*aum), 100+100*j);
-                aum+=1;
+        int location=0;
+        int enterRow=0;
+        int num_index_skins=0;
+        while(num_index_skins != skins.size()){
+            location=0;
+            while(location != 4 && num_index_skins < skins.size()){
+                addObject(getSkins(num_index_skins), 75+(150*location), 100+(100*enterRow));
+                location+=1;
+                num_index_skins+=1;
             }
+            enterRow+=1;
         }
     }
     
     public void Addoptions(){
-        //addObject(start,300,250);
         addObject(play,300,250);
         addObject(logo,300,100);
     }
@@ -78,24 +77,16 @@ public class Menu extends World
         addObject(textSelect,300,25);
         addObject(start,300,300);
         AddOptionsSkin();
-        selectSkin();
-        
-        
     }
     
     public void act(){ 
         setBackground(background.getCurrentImage());
         backgroundMusic.playLoop();
         SelectOptionsMenu();
-        if(bandSelect == false){
-            bandX = 75;
-            bandY = 100;
-        }
         selectSkin();
         StartGame();
-        
-        //stop();
     }
+    
     public void SelectOptionsMenu(){
         if(play.getPressButton() == true){
             removeObjects(getObjects(Button.class));
@@ -103,35 +94,25 @@ public class Menu extends World
             Addcharacters();
         }
         if(return_menu.getPressButton() == true){
-            removeObject(return_menu);
+            removeObjects(getObjects(Button.class));
             removeObjects(getObjects(Aspect.class));
             removeObject(textSelect);
-            removeObject(start);
             removeObject(square);
             Addoptions();
         }
     }
+    
     public void selectSkin(){
         for(Aspect skin : skins){
             if(Greenfoot.mousePressed(skin) == true){
                 bandX = skin.getX();
                 bandY = skin.getY();
-                //showText("x: " + bandX + " y: " + bandY,80,50);
-                square.setLocation(skin.getX(),skin.getY());
-                bandSelect = true;
-                
-                
+                square.setLocation(skin.getX(),skin.getY());                
             }
         }        
-            //skin.Init_Game();
-            //stop(skin);
-        
     }
+    
     public void StartGame(){
-        /*for(Aspect skin : skins){
-            skin.Init_Game();
-            stop(skin);
-        }*/
         if(start.getPressButton() == true){
             if(bandX == 75 && bandY == 100){
                 SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model1_Static.png");
@@ -161,14 +142,7 @@ public class Menu extends World
                 SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model7_Static.png");
                 backgroundMusic.stop();
                 Greenfoot.setWorld(Level1);
-            }
-            //SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model1_Static.png");
-            
-        }
-    }
-    public void stop(Aspect skin){
-        if(Greenfoot.mousePressed(skin) == true){
-            backgroundMusic.stop();
+            }    
         }
     }
 }
