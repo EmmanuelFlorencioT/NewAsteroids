@@ -26,6 +26,7 @@ public class Spaceship extends SpaceObject
             handleEdgeMovement();
             shoot();
             checkForCollision();
+            
             if(powerActive){
                 speedBoostTimer();
             }
@@ -111,11 +112,13 @@ public class Spaceship extends SpaceObject
             } else {
                 ((Asteroid)astKiller).subLife();
                 this.subLife();
+                changeInvensible();
             }
         }
         if(invKiller != null){
             ((Invader)invKiller).subLife();
             this.subLife();
+            changeInvensible();
         }
     }
     
@@ -130,6 +133,32 @@ public class Spaceship extends SpaceObject
             this.powerActive = false;
             setSpeed(3);
             powerupTimeLeft = ACTIVE_PWRUP; //Reset timer
+        }
+    }
+    
+    public void changeInvensible(){
+        if(nameSkin == "SpaceShip_Model1_Static.png"){
+            
+            GifImage invensible = new GifImage("SpaceShip_Model1_AnimationInvensible.gif");
+            this.setImage(invensible.getCurrentImage());
+        }else if(nameSkin == "SpaceShip_Model2_Static.png"){
+            GifImage invensible = new GifImage("SpaceShip_Model2_AnimationInvensible.gif");
+            this.setImage(invensible.getCurrentImage());
+        }else if(nameSkin == "SpaceShip_Model3_Static.png"){
+            GifImage invensible = new GifImage("SpaceShip_Model3_AnimationInvensible.gif");
+            this.setImage(invensible.getCurrentImage());
+        }else if(nameSkin == "SpaceShip_Model4_Static.png"){
+            GifImage invensible = new GifImage("SpaceShip_Model4_AnimationInvensible.gif");
+            this.setImage(invensible.getCurrentImage());
+        }else if(nameSkin == "SpaceShip_Model5_Static.png"){
+            GifImage invensible = new GifImage("SpaceShip_Model5_AnimationInvensible.gif");
+            this.setImage(invensible.getCurrentImage());
+        }else if(nameSkin == "SpaceShip_Model6_Static.png"){
+            GifImage invensible = new GifImage("SpaceShip_Model6_AnimationInvensible.gif");
+            this.setImage(invensible.getCurrentImage());
+        }else if(nameSkin == "SpaceShip_Model7_Static.png"){
+            GifImage invensible = new GifImage("SpaceShip_Model7_AnimationInvensible.gif");
+            this.setImage(invensible.getCurrentImage());
         }
     }
     
