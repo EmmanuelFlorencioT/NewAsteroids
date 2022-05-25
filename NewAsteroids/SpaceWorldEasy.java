@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class SpaceWorldEasy extends Level
 {
-
     /**
      * Constructor for objects of class SpaceWorld.
      * 
@@ -16,12 +15,13 @@ public class SpaceWorldEasy extends Level
     public SpaceWorldEasy()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        setGameMode(true); //Infinite game mode
         setMaxNumOfAsteroids(3);
-        setMaxNumOfInvaders(0);
+        setMaxNumOfInvaders(1);
         setMaxNumOfPowerUp(1);
         setAsteroidInterval(20);
-        setInvaderInterval(500);
-        setPowerUpInterval(750);
+        setInvaderInterval(1000);
+        setPowerUpInterval(1500);
         astCall.mark(); //Start the timer
         invCall.mark();
         powCall.mark();
@@ -31,12 +31,13 @@ public class SpaceWorldEasy extends Level
     public SpaceWorldEasy(String skin)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        setGameMode(true); //Infinite game mode
         setMaxNumOfAsteroids(3);
         setMaxNumOfInvaders(1);
         setMaxNumOfPowerUp(1);
         setAsteroidInterval(20);
-        setInvaderInterval(500);
-        setPowerUpInterval(750);
+        setInvaderInterval(1000);
+        setPowerUpInterval(1500);
         astCall.mark(); //Start the timer
         invCall.mark();
         powCall.mark();
@@ -56,6 +57,7 @@ public class SpaceWorldEasy extends Level
     {
         Spaceship player = new Spaceship(skin);
         addObject(player, 300, 300);
+        addObject(scoreCounter, 80, 40);
     }
     
     public void act(){
@@ -79,7 +81,7 @@ public class SpaceWorldEasy extends Level
 
     public void spawnInvaders(){
         if(invCall.millisElapsed() > getInvaderInterval()){
-            if(getNumOfInvaders() < getMaxNumOfInvaders() && Greenfoot.getRandomNumber(1000) < 50){
+            if(getNumOfInvaders() < getMaxNumOfInvaders() && Greenfoot.getRandomNumber(1000) < 25){
                 addInvader();
                 Invader inv = new Invader(4); //Speed of invader will be 4
                 spawnInLocation(inv);
@@ -90,7 +92,7 @@ public class SpaceWorldEasy extends Level
     
     public void spawnPowerUp(){
         if(powCall.millisElapsed() > getPowerUpInterval()){
-            if(getNumOfPowerUp() < getMaxNumOfPowerUp() && Greenfoot.getRandomNumber(1000) < 500){
+            if(getNumOfPowerUp() < getMaxNumOfPowerUp() && Greenfoot.getRandomNumber(1000) < 40){
                 addPowerUp();
                 int typeOfPowerUp = Greenfoot.getRandomNumber(4);
                 PowerUp pUp = null;
