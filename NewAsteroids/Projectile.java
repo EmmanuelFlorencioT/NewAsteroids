@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Projectile extends SpaceObject
 {
+    private final int AST_MED_SCORE = 100;
+    private final int AST_SMALL_SCORE = 200;
+    private final int INV_SCORE = 500;
     /**
      * Act - do whatever the Projectile wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -42,6 +45,7 @@ public class Projectile extends SpaceObject
     public void checkCollision(){
         Actor asteroid = getOneObjectAtOffset(0, 0, Asteroid.class);
         Actor invader = getOneObjectAtOffset(0, 0, Invader.class);
+        Level myLevel = (Level)getWorld();
         
         if(asteroid != null){
             ((Asteroid)asteroid).subLife();
@@ -58,12 +62,19 @@ public class Projectile extends SpaceObject
                                            this.getY() + Greenfoot.getRandomNumber(5));
                 getWorld().addObject(ast2, this.getX() + Greenfoot.getRandomNumber(5), 
                                            this.getY() + Greenfoot.getRandomNumber(5));
-            }
+                if(myLevel.getGameMode()) //If this is true, then we have an infinite game mode
+                    myLevel.subAsteroid(); //Allow another asteroid to spawn
+                myLevel.getScore().increaseScore(AST_MED_SCORE);
+            } else
+                myLevel.getScore().increaseScore(AST_SMALL_SCORE);
             this.subLife();
         }
         
         if(invader != null){
-            ((Invader)invader).subLife();
+            ((Invader)invader).subLife(); 
+            if(myLevel.getGameMode()) //If this is true, then we have an infinite game mode
+                myLevel.subInvader(); //Allow another invader to spawn
+            myLevel.getScore().increaseScore(INV_SCORE);
             this.subLife();
         }
     }
