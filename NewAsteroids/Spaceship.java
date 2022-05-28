@@ -139,7 +139,6 @@ public class Spaceship extends SpaceObject
     
     public void changeInvensible(){
         if(nameSkin == "SpaceShip_Model1_Static.png"){
-            
             GifImage invensible = new GifImage("SpaceShip_Model1_AnimationInvensible.gif");
             this.setImage(invensible.getCurrentImage());
         }else if(nameSkin == "SpaceShip_Model2_Static.png"){
