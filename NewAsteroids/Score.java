@@ -31,4 +31,8 @@ public class Score extends Actor
     public void increaseScore(int score){
         this.score += score;
     }
+    
+    public int getCurrScore(){
+        return this.score;
+    }
 }
