@@ -11,6 +11,8 @@ public abstract class Level extends World
     protected SimpleTimer astCall = new SimpleTimer();
     protected SimpleTimer invCall = new SimpleTimer();
     protected SimpleTimer powCall = new SimpleTimer();
+    protected Score scoreCounter = new Score();
+    private boolean infiniteMode;
     private int numOfAsteroids, maxNumOfAsteroids;
     private int numOfInvaders, maxNumOfInvaders;
     private int numOfPowerUp, maxNumOfPowerUp;
@@ -27,6 +29,15 @@ public abstract class Level extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
         numOfAsteroids = numOfInvaders = numOfPowerUp = 0;
+    }
+    
+    /*Game Mode Handling*/
+    public void setGameMode(boolean mode){
+        /*True for an infinite mode or False for a finite mode*/
+        this.infiniteMode = mode;
+    }
+    public boolean getGameMode(){
+        return this.infiniteMode;
     }
     
     /*Asteroid Handling*/
@@ -96,5 +107,10 @@ public abstract class Level extends World
     }
     public int getPowerUpInterval(){
         return this.POWERUP_INT;
+    }
+    
+    /*Score Counter Handling*/
+    public Score getScore(){
+        return this.scoreCounter;
     }
 }
