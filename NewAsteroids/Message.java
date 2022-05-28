@@ -25,6 +25,6 @@ public class Message extends Actor
     
     public void updateMessage(){
         String formattedScore = String.format("%05d", this.score);
-        setImage(new GreenfootImage("Score: " + formattedScore, 20, Color.CYAN, Color.BLACK));
+        setImage(new GreenfootImage("Score: " + formattedScore, 30, Color.CYAN, Color.BLACK));
     }
 }
