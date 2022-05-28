@@ -16,6 +16,7 @@ public class Spaceship extends SpaceObject
     private String nameSkin;
     private Score myCounter;
     private int myScore;
+    private int bandLifes = 1;
     /**
      * Act - do whatever the Spaceship wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -49,6 +50,10 @@ public class Spaceship extends SpaceObject
         shotReady = true;
         nameSkin = skin;
         setImage(skin);
+    }
+    
+    public int getBandLifes(){
+        return bandLifes;
     }
     
     public void moveSpaceship(){
@@ -115,12 +120,15 @@ public class Spaceship extends SpaceObject
                 this.subLife();
                 changeInvensible();
             }
+            bandLifes--;
         }
         if(invKiller != null){
             ((Invader)invKiller).subLife();
             this.subLife();
             changeInvensible();
+            bandLifes--;
         }
+        
     }
     
     /*Speed Power Up*/

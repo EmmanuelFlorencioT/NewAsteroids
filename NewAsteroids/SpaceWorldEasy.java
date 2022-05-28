@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
 /**
  * Write a description of class SpaceWorldEasy here.
  * 
@@ -12,10 +12,17 @@ public class SpaceWorldEasy extends Level
      * Constructor for objects of class SpaceWorld.
      * 
      */
+    private Spaceship player;
+    private String nameSkin;
+    private int newLife;
+    private int oldLife;
+    
+    private ArrayList <Life> lifes = new ArrayList<Life>();
     public SpaceWorldEasy()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         setGameMode(true); //Infinite game mode
+        nameSkin = "SpaceShip_Model1_Static.png";
         setMaxNumOfAsteroids(3);
         setMaxNumOfInvaders(1);
         setMaxNumOfPowerUp(1);
@@ -33,6 +40,8 @@ public class SpaceWorldEasy extends Level
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         setGameMode(true); //Infinite game mode
         setMaxNumOfAsteroids(3);
+        
+        nameSkin = skin;
         setMaxNumOfInvaders(1);
         setMaxNumOfPowerUp(1);
         setAsteroidInterval(20);
@@ -47,23 +56,65 @@ public class SpaceWorldEasy extends Level
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
+    
+    public void addLifes(){
+        for(int i=0; i < player.getLife(); i++){
+            lifes.add(new Life());
+            if(oldLife < player.getLife()){
+                oldLife = player.getLife();
+            }
+            
+        }
+    }
+    public void deleteLifes(){
+        if(oldLife - player.getLife() > 0){
+            //showText("Si entre " + lifes.size(),100,250);
+            removeObject(lifes.get(player.getLife()));
+            lifes.remove(player.getLife());
+            //showText("" + lifes.size(),100,250);
+            oldLife = player.getLife();
+        }
+        
+        
+    }
+    public Life getSkinLife(int typeskin){
+        return lifes.get(typeskin);
+    }
+
+    public void printLifes(){
+        int aum=0;
+        for(int i=0; i < player.getLife(); i++){
+            addObject(getSkinLife(i),400+(i*25),40);
+            
+        }
+    }
+    
     private void prepare()
     {
-        Spaceship player = new Spaceship();
+        player = new Spaceship();
         addObject(player, 300, 300);
     }
     
     private void prepare(String skin)
     {
-        Spaceship player = new Spaceship(skin);
+        player = new Spaceship(skin);
         addObject(player, 300, 300);
         addObject(scoreCounter, 80, 40);
+        //addObject(lifes,500,40);
     }
     
     public void act(){
         spawnAsteroids();
         spawnInvaders();
         spawnPowerUp();
+        addLifes();
+        
+        printLifes();
+        deleteLifes();
+        //showText("Life: " + player.getLife(),50,100);
+        //showText("LifeOld: " + oldLife,50,150);
+        //showText("LifeNew: " + newLife,50,200);
+        
     }
     
     private void spawnAsteroids(){
@@ -92,12 +143,15 @@ public class SpaceWorldEasy extends Level
     
     public void spawnPowerUp(){
         if(powCall.millisElapsed() > getPowerUpInterval()){
-            if(getNumOfPowerUp() < getMaxNumOfPowerUp() && Greenfoot.getRandomNumber(1000) < 40){
+            if(getNumOfPowerUp() < getMaxNumOfPowerUp() && Greenfoot.getRandomNumber(1000) < 1000){
                 addPowerUp();
-                int typeOfPowerUp = Greenfoot.getRandomNumber(4);
+                //int typeOfPowerUp = Greenfoot.getRandomNumber(4);
+                
+                int typeOfPowerUp = 0;
                 PowerUp pUp = null;
                 switch(typeOfPowerUp){
                     case 0: //ExtraLife
+                    
                         pUp = new ExtraLife();
                         break;
                     case 1: //Speed
