@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameOver extends World
 {
+    private Message displayScore;
     private Button retry = new ButtonRetry();
     private Button buttonReturn = new ButtonReturn();
     private String nameSkin;
@@ -25,17 +26,18 @@ public class GameOver extends World
         //Select the default SpaceShip
     }
     
-    public GameOver(String nameSkin)
+    public GameOver(String nameSkin, int finScore)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         options();
         //Selection Skin
         this.nameSkin = nameSkin;
-        
+        displayScore = new Message(finScore);
     }
     
     public void act(){
+        addObject(displayScore, 300, 35);
         selectOption();
     }
     
@@ -43,7 +45,6 @@ public class GameOver extends World
         if(retry.getPressButton() == true){
             removeObjects(getObjects(Button.class));
             SpaceWorldEasy world = new SpaceWorldEasy(nameSkin);
-            
             Greenfoot.setWorld(world);
         }
         if(buttonReturn.getPressButton() == true){

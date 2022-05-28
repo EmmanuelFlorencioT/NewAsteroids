@@ -14,7 +14,8 @@ public class Spaceship extends SpaceObject
     private int powerupTimeLeft = ACTIVE_PWRUP;
     private boolean shotReady, powerActive = false;
     private String nameSkin;
-    //private GameOver gameover = new GameOver();
+    private Score myCounter;
+    private int myScore;
     /**
      * Act - do whatever the Spaceship wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,13 +27,13 @@ public class Spaceship extends SpaceObject
             handleEdgeMovement();
             shoot();
             checkForCollision();
-            
+            checkMyScore();
             if(powerActive){
                 speedBoostTimer();
             }
         } else {
             getWorld().removeObject(this);
-            GameOver gameover = new GameOver(getSkin());
+            GameOver gameover = new GameOver(getSkin(), myScore);
             Greenfoot.setWorld(gameover);
             //Greenfoot.stop(); /*We will stop the execution of the game (for now)*/
         }
@@ -163,5 +164,10 @@ public class Spaceship extends SpaceObject
     
     public String getSkin(){
         return this.nameSkin;
+    }
+    
+    public void checkMyScore(){
+        myCounter = ((Level)getWorld()).getScore();
+        myScore = myCounter.getCurrScore();
     }
 }
