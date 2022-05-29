@@ -14,7 +14,9 @@ public class Spaceship extends SpaceObject
     private int powerupTimeLeft = ACTIVE_PWRUP;
     private boolean shotReady, powerActive = false;
     private String nameSkin;
-    //private GameOver gameover = new GameOver();
+    private Score myCounter;
+    private int myScore;
+    private int bandLifes = 1;
     /**
      * Act - do whatever the Spaceship wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,13 +28,13 @@ public class Spaceship extends SpaceObject
             handleEdgeMovement();
             shoot();
             checkForCollision();
-            
+            checkMyScore();
             if(powerActive){
                 speedBoostTimer();
             }
         } else {
             getWorld().removeObject(this);
-            GameOver gameover = new GameOver(getSkin());
+            GameOver gameover = new GameOver(getSkin(), myScore);
             Greenfoot.setWorld(gameover);
             //Greenfoot.stop(); /*We will stop the execution of the game (for now)*/
         }
@@ -48,6 +50,10 @@ public class Spaceship extends SpaceObject
         shotReady = true;
         nameSkin = skin;
         setImage(skin);
+    }
+    
+    public int getBandLifes(){
+        return bandLifes;
     }
     
     public void moveSpaceship(){
@@ -114,12 +120,15 @@ public class Spaceship extends SpaceObject
                 this.subLife();
                 changeInvensible();
             }
+            bandLifes--;
         }
         if(invKiller != null){
             ((Invader)invKiller).subLife();
             this.subLife();
             changeInvensible();
+            bandLifes--;
         }
+        
     }
     
     /*Speed Power Up*/
@@ -138,7 +147,6 @@ public class Spaceship extends SpaceObject
     
     public void changeInvensible(){
         if(nameSkin == "SpaceShip_Model1_Static.png"){
-            
             GifImage invensible = new GifImage("SpaceShip_Model1_AnimationInvensible.gif");
             this.setImage(invensible.getCurrentImage());
         }else if(nameSkin == "SpaceShip_Model2_Static.png"){
@@ -164,5 +172,10 @@ public class Spaceship extends SpaceObject
     
     public String getSkin(){
         return this.nameSkin;
+    }
+    
+    public void checkMyScore(){
+        myCounter = ((Level)getWorld()).getScore();
+        myScore = myCounter.getCurrScore();
     }
 }
