@@ -3,3 +3,6 @@
 
 # BlueJ files
 *.ctxt
+
+# Documentation files
+doc/
