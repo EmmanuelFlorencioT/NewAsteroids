@@ -1,4 +1,3 @@
-
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -21,7 +20,8 @@ public class GameOver extends World
     public GameOver()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
+        backgroundMusicGameOver.setVolume(45);
         options();
         nameSkin = "SpaceShip_Model1_Static.png";
         //Select the default SpaceShip
@@ -31,6 +31,7 @@ public class GameOver extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
+        backgroundMusicGameOver.setVolume(45);
         //Selection Skin
         this.nameSkin = nameSkin;
         displayScore = new Message(finScore);

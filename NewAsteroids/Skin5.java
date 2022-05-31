@@ -16,12 +16,4 @@ public class Skin5 extends Aspect
     {
         // Add your action code here.
     }
-    @Override
-    public void Init_Game(){
-        if(Greenfoot.mousePressed(this) == true){
-            //SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model5_Static.png");
-            //Greenfoot.setWorld(Level1);
-
-        }
-    }
 }

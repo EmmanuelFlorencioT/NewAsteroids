@@ -26,6 +26,7 @@ public class Slide3 extends Story
         if(Greenfoot.isKeyDown("space") && timerToSkip.millisElapsed() > getCooldownToSkip()){
             SpaceWorldEasy Level1 = new SpaceWorldEasy(getSkinName());
             Greenfoot.setWorld(Level1);
+            intro.stop();
         }
     }
 }
