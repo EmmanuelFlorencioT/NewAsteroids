@@ -19,7 +19,7 @@ public abstract class Level extends World
     private int ASTEROID_INT; /*Interval for possible spawn of Asteroids*/
     private int INVADER_INT; /*Interval for possible spawn of Invader*/
     private int POWERUP_INT; /*Interval for possible spawn of PowerUp*/
-    
+    public GreenfootSound backgroundMusic = new GreenfootSound("MusicLevel.mp3");
     /**
      * Constructor for objects of class Level.
      * 

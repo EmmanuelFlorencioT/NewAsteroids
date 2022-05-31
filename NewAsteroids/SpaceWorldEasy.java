@@ -16,7 +16,6 @@ public class SpaceWorldEasy extends Level
     private String nameSkin;
     private int newLife;
     private int oldLife;
-    
     private ArrayList <Life> lifes = new ArrayList<Life>();
     public SpaceWorldEasy()
     {    
@@ -39,9 +38,8 @@ public class SpaceWorldEasy extends Level
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         setGameMode(true); //Infinite game mode
-        setMaxNumOfAsteroids(3);
-        
         nameSkin = skin;
+        setMaxNumOfAsteroids(3);
         setMaxNumOfInvaders(1);
         setMaxNumOfPowerUp(1);
         setAsteroidInterval(20);
@@ -107,8 +105,8 @@ public class SpaceWorldEasy extends Level
         spawnAsteroids();
         spawnInvaders();
         spawnPowerUp();
+        backgroundMusic.playLoop();
         addLifes();
-        
         printLifes();
         deleteLifes();
         //showText("Life: " + player.getLife(),50,100);

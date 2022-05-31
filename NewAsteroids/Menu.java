@@ -52,9 +52,9 @@ public class Menu extends World
     }
 
     public void AddOptionsSkin(){
-        int location=0;
-        int enterRow=0;
-        int num_index_skins=0;
+        int location=0; //variable to set location the skin
+        int enterRow=0; //variable to set a new row for the skins
+        int num_index_skins=0; //variable to know what type the skin is into array
         while(num_index_skins != skins.size()){
             location=0;
             while(location != 4 && num_index_skins < skins.size()){
