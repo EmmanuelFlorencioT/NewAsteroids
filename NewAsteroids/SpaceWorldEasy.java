@@ -16,7 +16,6 @@ public class SpaceWorldEasy extends Level
     private String nameSkin;
     private int newLife;
     private int oldLife;
-    
     private ArrayList <Life> lifes = new ArrayList<Life>();
     public SpaceWorldEasy()
     {    
@@ -106,8 +105,8 @@ public class SpaceWorldEasy extends Level
         spawnAsteroids();
         spawnInvaders();
         spawnPowerUp();
+        backgroundMusic.playLoop();
         addLifes();
-        
         printLifes();
         deleteLifes();
         //showText("Life: " + player.getLife(),50,100);

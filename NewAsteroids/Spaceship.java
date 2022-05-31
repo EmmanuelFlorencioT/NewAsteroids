@@ -33,6 +33,7 @@ public class Spaceship extends SpaceObject
                 speedBoostTimer();
             }
         } else {
+            ((Level)getWorld()).backgroundMusic.stop();
             getWorld().removeObject(this);
             GameOver gameover = new GameOver(getSkin(), myScore);
             Greenfoot.setWorld(gameover);
