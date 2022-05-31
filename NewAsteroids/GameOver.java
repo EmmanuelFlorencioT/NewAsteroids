@@ -61,5 +61,6 @@ public class GameOver extends World
         addObject(displayScore, 300, 35);
         addObject(retry,300,250);
         addObject(buttonReturn,300,350);
+        addObject(displayScore, 300, 35);
     }
 }
