@@ -29,15 +29,14 @@ public class GameOver extends World
     public GameOver(String nameSkin, int finScore)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
+        displayScore = new Message(finScore);
         options();
         //Selection Skin
         this.nameSkin = nameSkin;
-        displayScore = new Message(finScore);
     }
     
     public void act(){
-        addObject(displayScore, 300, 35);
         selectOption();
     }
     
@@ -57,5 +56,6 @@ public class GameOver extends World
     public void options(){
         addObject(retry,300,250);
         addObject(buttonReturn,300,350);
+        addObject(displayScore, 300, 35);
     }
 }
