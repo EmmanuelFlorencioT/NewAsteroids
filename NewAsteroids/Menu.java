@@ -115,34 +115,46 @@ public class Menu extends World
     public void StartGame(){
         if(start.getPressButton() == true){
             if(bandX == 75 && bandY == 100){
-                SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model1_Static.png");
+                Slide1 story = new Slide1("SpaceShip_Model1_Static.png");
                 backgroundMusic.stop();
-                Greenfoot.setWorld(Level1);
+                Greenfoot.setWorld(story);
             }else if(bandX == 225 && bandY == 100){
-                SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model2_Static.png");
+                Slide1 story = new Slide1("SpaceShip_Model2_Static.png");
                 backgroundMusic.stop();
-                Greenfoot.setWorld(Level1);
+                Greenfoot.setWorld(story);
             }else if(bandX == 375 && bandY == 100){
-                SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model3_Static.png");
+                Slide1 story = new Slide1("SpaceShip_Model3_Static.png");
                 backgroundMusic.stop();
-                Greenfoot.setWorld(Level1);
+                Greenfoot.setWorld(story);
             }else if(bandX == 525 && bandY == 100){
-                SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model4_Static.png");
+                Slide1 story = new Slide1("SpaceShip_Model4_Static.png");
                 backgroundMusic.stop();
-                Greenfoot.setWorld(Level1);
+                Greenfoot.setWorld(story);
             }else if(bandX == 75 && bandY == 200){
-                SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model5_Static.png");
+                Slide1 story = new Slide1("SpaceShip_Model5_Static.png");
                 backgroundMusic.stop();
-                Greenfoot.setWorld(Level1);
+                Greenfoot.setWorld(story);
             }else if(bandX == 225 && bandY == 200){
-                SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model6_Static.png");
+                Slide1 story = new Slide1("SpaceShip_Model6_Static.png");
                 backgroundMusic.stop();
-                Greenfoot.setWorld(Level1);
+                Greenfoot.setWorld(story);
             }else if(bandX == 375 && bandY == 200){
-                SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model7_Static.png");
+                Slide1 story = new Slide1("SpaceShip_Model7_Static.png");
                 backgroundMusic.stop();
+<<<<<<< HEAD
                 Greenfoot.setWorld(Level1);
             }    
+=======
+                Greenfoot.setWorld(story);
+            }
+            //SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model1_Static.png");
+            
+        }
+    }
+    public void stop(Aspect skin){
+        if(Greenfoot.mousePressed(skin) == true){
+            backgroundMusic.stop();
+>>>>>>> origin
         }
     }
 }
