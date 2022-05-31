@@ -141,20 +141,8 @@ public class Menu extends World
             }else if(bandX == 375 && bandY == 200){
                 Slide1 story = new Slide1("SpaceShip_Model7_Static.png");
                 backgroundMusic.stop();
-<<<<<<< HEAD
-                Greenfoot.setWorld(Level1);
-            }    
-=======
                 Greenfoot.setWorld(story);
-            }
-            //SpaceWorldEasy Level1 = new SpaceWorldEasy("SpaceShip_Model1_Static.png");
-            
-        }
-    }
-    public void stop(Aspect skin){
-        if(Greenfoot.mousePressed(skin) == true){
-            backgroundMusic.stop();
->>>>>>> origin
+            }  
         }
     }
 }
