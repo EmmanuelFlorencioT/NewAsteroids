@@ -18,7 +18,7 @@ public class Slide1 extends Story
     }
     
     public void act(){
-        intro.playLoop();
+        Story.intro.playLoop();
         changeSlide();
     }
     
