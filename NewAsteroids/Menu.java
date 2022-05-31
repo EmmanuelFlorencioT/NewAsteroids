@@ -46,7 +46,7 @@ public class Menu extends World
         skins.add(new Skin6());
         skins.add(new Skin7());
     }
-    
+
     public Aspect getSkins(int typeskin){
         return skins.get(typeskin);
     }
